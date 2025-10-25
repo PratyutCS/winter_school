@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --accent: linear-gradient(90deg,#7c3aed,#ec4899);
+body {
+  @apply bg-gradient-to-br from-white via-blue-50 to-indigo-100 text-gray-800 overflow-x-hidden;
+  font-family: 'Inter', sans-serif;
 }
 
-body { @apply bg-black text-white antialiased; }
-a { @apply underline-offset-4; }
-
-.tech-card {
-  @apply bg-white/5 border border-white/5 rounded-2xl p-4 backdrop-blur-sm;
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
 }

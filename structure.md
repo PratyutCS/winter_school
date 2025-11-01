@@ -10,7 +10,7 @@ workshop-website/
 │   │   └── registrationController.js
 │   └── config/
 │       └── db.js
-│
+
 ├── frontend/
 │   ├── index.html
 │   ├── vite.config.js

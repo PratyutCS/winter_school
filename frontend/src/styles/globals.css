@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-gradient-to-br from-white via-blue-50 to-indigo-100 text-gray-800 overflow-x-hidden;
   font-family: 'Inter', sans-serif;
 }
@@ -11,4 +11,9 @@ body {
 * {
   transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
+} */
+
+body {
+  background: linear-gradient(135deg, #b4a7af, #9f8f99);
+  background-attachment: fixed;
 }

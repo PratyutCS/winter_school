@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import RegistrationHome from './pages/Registration/RegistrationHome';
 import CodeOfConduct from './pages/Registration/CodeOfConduct';
@@ -21,6 +22,7 @@ import EccentricBackground from './components/EccentricBackground';
 export default function App(){ 
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col relative">
         <div className="sticky top-0 z-50">
           <Header />

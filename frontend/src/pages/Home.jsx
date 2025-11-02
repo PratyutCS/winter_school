@@ -8,26 +8,28 @@ import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 900,
+      duration: 1200,
       easing: "ease-in-out",
-      once: true,
-      offset: 40,
+      once: false,
+      offset: 100,
     });
   }, []);
 
   return (
     <div className="min-h-screen text-[#2e2a30]" style={{ backgroundColor: "#9ec5c6" }}>
       {/* ================= HERO SECTION ================= */}
-      <section className="relative min-h-screen w-full flex items-center justify-center py-20"
-        data-aos="fade-up"
-        data-aos-duration="1200"
+      <section className="relative min-h-screen w-full flex items-center justify-center py-20
+                        transition-all duration-1000 ease-in-out"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
       >
         <div
           className="relative max-w-4xl w-full mx-6 px-12 py-14 rounded-[32px] 
           bg-white/20 backdrop-blur-xl border border-white/30 
           shadow-[0_20px_60px_rgba(0,0,0,0.2)] text-center
           hover:shadow-[0_30px_80px_rgba(0,0,0,0.25)] transition-all duration-500
-          hover:scale-[1.02] hover:bg-white/25"
+          hover:scale-[1.02] hover:bg-white/25
+          animate-float"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-grey mb-6 tracking-tight leading-tight
                          animate-fade-in-down">
@@ -68,8 +70,10 @@ const Home = () => {
       </section>
 
       {/* ================= ABOUT SECTION ================= */}
-      <section data-aos="fade-up" data-aos-duration="1000" className="mt-24 px-8 max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+      <section data-aos="flip-left" data-aos-duration="1500" 
+               className="mt-24 px-8 max-w-6xl mx-auto py-20
+                        transition-all duration-1000 ease-in-out transform">
+        <div className="text-center mb-12 animate-bounce-slow">
           <h2 className="text-4xl md:text-5xl font-bold text-[#2e2a30] inline-block relative
                        hover:scale-105 transition-transform duration-300 cursor-default">
             About the Workshop
@@ -132,10 +136,17 @@ const Home = () => {
         </div>
       </section>
       {/* ================= SPEAKERS ================= */}
-      <section data-aos="fade-up" data-aos-duration="1000" className="mt-28 px-8 max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-10 tracking-tight text-[#2e2a30] hover:scale-105 transition-transform duration-300 inline-block">
-          Speakers
-        </h2>
+      <section data-aos="fade-up" data-aos-duration="1500" 
+               className="mt-28 px-8 max-w-6xl mx-auto py-20
+                        transition-all duration-1000 ease-in-out">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2e2a30] inline-block relative
+                       hover:scale-105 transition-transform duration-300 cursor-default">
+            Speakers
+            <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#2e2a30]/50 to-transparent
+                           transform scale-x-0 hover:scale-x-100 transition-transform duration-500"></span>
+          </h2>
+        </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
           {[
@@ -147,67 +158,98 @@ const Home = () => {
             { name: "Miss Isha Goel", university: "DU MA Psychology" },
           ].map((speaker, i) => (
             <div key={i} 
-                 className="flex flex-col items-center text-[#2e2a30] group cursor-pointer"
-                 data-aos="zoom-in"
-                 data-aos-delay={i * 100}
-                 data-aos-duration="800">
+                 className="flex flex-col items-center text-[#2e2a30] group cursor-pointer
+                          transform transition-all duration-700"
+                 data-aos="flip-left"
+                 data-aos-delay={i * 200}
+                 data-aos-duration="1200">
               {/* Circular photo vessel */}
               <div className="w-32 h-32 rounded-full bg-white/40 border border-white/30 shadow-md mb-4 overflow-hidden
-                            transition-all duration-500 group-hover:scale-110 group-hover:shadow-xl 
-                            group-hover:border-white/50 group-hover:bg-white/50 group-hover:-translate-y-2">
+                            transition-all duration-700 group-hover:scale-125 group-hover:shadow-2xl 
+                            group-hover:border-white/70 group-hover:bg-white/60 group-hover:-translate-y-4
+                            group-hover:rotate-12 animate-pulse-slow">
                 {/* You can insert <img src="..." alt="..." className="w-full h-full object-cover" /> here later */}
               </div>
-              <h3 className="text-lg font-semibold group-hover:text-[#2e2a30] transition-all duration-300 
-                           group-hover:scale-105">{speaker.name}</h3>
-              <p className="text-sm opacity-80 group-hover:opacity-100 transition-opacity duration-300">{speaker.university}</p>
+              <h3 className="text-lg font-semibold group-hover:text-[#2e2a30] transition-all duration-700 
+                           group-hover:scale-125 group-hover:font-bold">{speaker.name}</h3>
+              <p className="text-sm opacity-80 group-hover:opacity-100 transition-all duration-700 group-hover:scale-110">{speaker.university}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* ================= KEY FOCUS AREAS ================= */}
-      <section data-aos="fade-up" data-aos-duration="1000" className="mt-24 px-8 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center text-[#2e2a30] hover:scale-105 transition-transform duration-300 inline-block">
-          Key Focus Areas
-        </h2>
+      <section data-aos="zoom-in-up" data-aos-duration="1500" 
+               className="mt-24 px-8 max-w-6xl mx-auto py-20
+                        transition-all duration-1000 ease-in-out">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2e2a30] inline-block relative
+                       hover:scale-105 transition-transform duration-300 cursor-default">
+            Key Focus Areas
+            <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#2e2a30]/50 to-transparent
+                           transform scale-x-0 hover:scale-x-100 transition-transform duration-500"></span>
+          </h2>
+        </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {["Modern Cryptography", "Blockchain Security", "Quantum Safe Systems"].map((topic, i) => (
+          {[
+            "Symmetric & Asymmetric Cryptography",
+            "Blockchain Security",
+            "Quantum-Safe Cryptography",
+            "Cryptanalysis Techniques",
+            "Zero-Knowledge Proofs",
+            "Secure Multi-Party Computation",
+            "Hash Functions & Digital Signatures",
+            "Cryptographic Protocols",
+            "Side-Channel Attacks"
+          ].map((topic, i) => (
             <div
               key={i}
-              data-aos="flip-up"
-              data-aos-delay={i * 150}
-              data-aos-duration="800"
+              data-aos="zoom-in-up"
+              data-aos-delay={i * 100}
+              data-aos-duration="1200"
               className="p-6 bg-white/30 border border-white/40 rounded-xl backdrop-blur-md text-center text-[#2e2a30]
-                       transition-all duration-500 hover:scale-105 hover:bg-white/40 hover:shadow-xl
-                       hover:-translate-y-2 hover:border-white/60 cursor-pointer group"
+                       transition-all duration-700 hover:scale-125 hover:bg-white/50 hover:shadow-2xl
+                       hover:-translate-y-4 hover:border-white/80 cursor-pointer group hover:rotate-3
+                       transform animate-float"
+              style={{ animationDelay: `${i * 0.2}s` }}
             >
-              <h3 className="text-xl font-semibold group-hover:scale-110 transition-transform duration-300">{topic}</h3>
+              <h3 className="text-xl font-semibold group-hover:scale-125 group-hover:font-bold transition-all duration-700">{topic}</h3>
             </div>
           ))}
         </div>
       </section>
 
       {/* ================= IMPORTANT DATES ================= */}
-      <section data-aos="fade-up" data-aos-duration="1000" className="mt-28 px-8 max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-10 tracking-tight text-[#2e2a30] hover:scale-105 transition-transform duration-300 inline-block">
-          Important Dates
-        </h2>
+      <section data-aos="flip-up" data-aos-duration="1500" 
+               className="mt-28 px-8 max-w-5xl mx-auto py-20
+                        transition-all duration-1000 ease-in-out">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2e2a30] inline-block relative
+                       hover:scale-105 transition-transform duration-300 cursor-default">
+            Important Dates
+            <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#2e2a30]/50 to-transparent
+                           transform scale-x-0 hover:scale-x-100 transition-transform duration-500"></span>
+          </h2>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div data-aos="slide-right" data-aos-duration="800"
+          <div data-aos="flip-right" data-aos-duration="1200"
                className="p-8 rounded-2xl shadow-sm border border-[#2e2a30]/20 
-                          bg-white/40 text-[#2e2a30] hover:shadow-xl transition-all duration-500
-                          hover:scale-105 hover:-translate-y-2 hover:bg-white/50 hover:border-[#2e2a30]/30 cursor-pointer group">
-            <h3 className="text-xl font-semibold group-hover:scale-105 transition-transform duration-300">Registration Opens</h3>
-            <p className="text-sm mt-2 opacity-80 group-hover:opacity-100 transition-opacity duration-300">December 05, 2025</p>
+                          bg-white/40 text-[#2e2a30] hover:shadow-2xl transition-all duration-700
+                          hover:scale-125 hover:-translate-y-4 hover:bg-white/60 hover:border-[#2e2a30]/40 
+                          cursor-pointer group transform hover:rotate-3 animate-pulse-slow">
+            <h3 className="text-xl font-semibold group-hover:scale-110 group-hover:font-bold transition-all duration-700">Registration Opens</h3>
+            <p className="text-sm mt-2 opacity-80 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105">December 05, 2025</p>
           </div>
 
-          <div data-aos="slide-left" data-aos-duration="800"
+          <div data-aos="flip-left" data-aos-duration="1200"
                className="p-8 rounded-2xl shadow-sm border border-[#2e2a30]/20 
-                          bg-white/40 text-[#2e2a30] hover:shadow-xl transition-all duration-500
-                          hover:scale-105 hover:-translate-y-2 hover:bg-white/50 hover:border-[#2e2a30]/30 cursor-pointer group">
-            <h3 className="text-xl font-semibold group-hover:scale-105 transition-transform duration-300">Workshop Dates</h3>
-            <p className="text-sm mt-2 opacity-80 group-hover:opacity-100 transition-opacity duration-300">December 15–17, 2025</p>
+                          bg-white/40 text-[#2e2a30] hover:shadow-2xl transition-all duration-700
+                          hover:scale-125 hover:-translate-y-4 hover:bg-white/60 hover:border-[#2e2a30]/40 
+                          cursor-pointer group transform hover:-rotate-3 animate-pulse-slow"
+               style={{ animationDelay: '0.5s' }}>
+            <h3 className="text-xl font-semibold group-hover:scale-110 group-hover:font-bold transition-all duration-700">Workshop Dates</h3>
+            <p className="text-sm mt-2 opacity-80 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105">December 15–17, 2025</p>
           </div>
         </div>
       </section>

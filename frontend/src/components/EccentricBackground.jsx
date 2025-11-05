@@ -5,7 +5,7 @@ export default function EccentricBackground() {
     <div
       aria-hidden
       className="pointer-events-none fixed inset-0 -z-10"
-      style={{ backgroundColor: '#9ec5c6' }}
+      style={{ backgroundColor: '#f8f9fa' }}
     />
   );
 }

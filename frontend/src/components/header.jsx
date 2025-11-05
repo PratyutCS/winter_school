@@ -5,7 +5,7 @@ import iitBhilaiLogo from '../../assets/IIT_Bhilai_Logo.svg';
 
 export default function Header() {
   return (
-    <header className="w-full bg-[#9ec5c6] border-b border-[#2e2a30]/20 shadow-sm">
+    <header className="w-full bg-[#a5b4fc] border-b border-[#2e2a30]/20 shadow-sm">
       {/* Logo + Title + Right Logos */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 sm:py-2 lg:py-2.5 flex items-center justify-between gap-2 sm:gap-3">
         {/* Left: Main Logo + Title */}

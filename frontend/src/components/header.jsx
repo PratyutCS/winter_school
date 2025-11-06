@@ -22,8 +22,8 @@ export default function Header() {
               className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain cursor-pointer"
             />
           </a>
-          <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-extrabold tracking-wide sm:tracking-wider bg-gradient-to-r from-[#7c3aed] to-[#ec4899] bg-clip-text text-transparent leading-tight">
-            National Workshop on Cryptology 2025
+          <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-extrabold tracking-wide sm:tracking-wider text-white leading-tight">
+            National Workshop on Cryptology(NWC) 2025
           </h1>
         </div>
 

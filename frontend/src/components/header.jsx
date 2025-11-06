@@ -23,7 +23,7 @@ export default function Header() {
             />
           </a>
           <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-extrabold tracking-wide sm:tracking-wider leading-tight">
-            <span className="text-white" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>National Workshop on Cryptology(NWC) </span>
+            <span className="text-white" style={{ textShadow: '0.5px 0.5px 0 rgba(0,0,0,0.3), -0.5px -0.5px 0 rgba(0,0,0,0.3)' }}>National Workshop on Cryptology(NWC) </span>
             <span className="bg-gradient-to-r from-[#7c3aed] to-[#ec4899] bg-clip-text text-transparent">2025</span>
           </h1>
         </div>

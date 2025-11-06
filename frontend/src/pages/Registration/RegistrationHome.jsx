@@ -14,7 +14,7 @@ export default function RegistrationHome() {
   }, []);
 
   return (
-    <div className="min-h-screen py-12 px-4 md:px-8" style={{ backgroundColor: '#9ec5c6' }}>
+    <div className="min-h-screen py-12 px-4 md:px-8" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12" data-aos="fade-down">

@@ -133,7 +133,7 @@ export default function Program() {
   };
 
   return (
-    <div className="min-h-screen py-12 px-4 md:px-8" style={{ backgroundColor: '#9ec5c6' }}>
+    <div className="min-h-screen py-12 px-4 md:px-8" style={{ backgroundColor: '#ffffff' }}>
       {/* Header */}
       <div className="max-w-5xl mx-auto mb-16 text-center" data-aos="fade-down">
         <h1 className="text-5xl md:text-6xl font-bold text-[#2e2a30] mb-4">

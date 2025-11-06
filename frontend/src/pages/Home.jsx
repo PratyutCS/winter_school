@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen text-[#2e2a30]" style={{ backgroundColor: "#9ec5c6" }}>
+    <div className="min-h-screen text-[#2e2a30]" style={{ backgroundColor: "#ffffff" }}>
       {/* ================= HERO SECTION ================= */}
       <section className="relative min-h-screen w-full flex items-center justify-center py-20
                         transition-all duration-1000 ease-in-out"

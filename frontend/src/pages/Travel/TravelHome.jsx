@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 
 export default function TravelHome(){
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#9ec5c6' }}>
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#ffffff' }}>
       <div className="flex-grow py-12 px-8">
         <h2 className="text-2xl font-semibold">Travel</h2>
         <div className="mt-4 flex gap-4">

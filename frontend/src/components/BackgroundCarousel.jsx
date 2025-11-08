@@ -2,11 +2,25 @@ import React, { useEffect, useState } from 'react';
 
 // Import your background images
 const images = [
-  'url("https://picsum.photos/seed/picsum1/1920/1080")',
-  'url("https://picsum.photos/seed/picsum2/1920/1080")',
-  'url("https://picsum.photos/seed/picsum3/1920/1080")',
-  'url("https://picsum.photos/seed/picsum4/1920/1080")',
-  // Add more images as needed
+  'url("../../assets/background/WhatsApp Image 2025-10-1.25.09 (4).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (3).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (1).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (2).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (5).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09.jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (3).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (2).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08.jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (1).jpg")',
+  'url("../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (4).jpg")',
+  'url("../../assets/background/WhatsApp Image 2024-05-16 at 10.24.16 (1).jpeg")',
+  'url("../../assets/background/WhatsApp Image 2024-05-16 at 10.24.16.jpeg")',
+  'url("../../assets/background/WhatsApp Image 2024-05-16 at 10.24.15.jpeg")',
+  'url("../../assets/background/IMG_4697.heic")',
+  'url("../../assets/background/IMG_4694.HEIC")',
+  'url("../../assets/background/IMG_4711.HEIC")',
+  'url("../../assets/background/IMG_4680.HEIC")',
+  'url("../../assets/background/IMG_4185.jpg")',
 ];
 
 export default function BackgroundCarousel() {

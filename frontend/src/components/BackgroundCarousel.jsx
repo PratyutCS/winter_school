@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
 
 // Import your background images
-import img1 from '../../assets/background/WhatsApp Image 2025-10-1.25.09 (4).jpg';
-import img2 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (3).jpg';
-import img3 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (1).jpg';
-import img4 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (2).jpg';
-import img5 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (5).jpg';
-import img6 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09.jpg';
-import img7 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (3).jpg';
-import img8 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (2).jpg';
-import img9 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08.jpg';
-import img10 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.08 (1).jpg';
-import img11 from '../../assets/background/WhatsApp Image 2025-10-15 at 05.25.09 (4).jpg';
-import img12 from '../../assets/background/WhatsApp Image 2024-05-16 at 10.24.16 (1).jpeg';
-import img13 from '../../assets/background/WhatsApp Image 2024-05-16 at 10.24.16.jpeg';
-import img14 from '../../assets/background/WhatsApp Image 2024-05-16 at 10.24.15.jpeg';
-import img15 from '../../assets/background/IMG_4185.jpg';
+import img1 from '../../assets/background/bg_image_1.jpg';
+import img2 from '../../assets/background/bg_image_2.jpg';
+import img3 from '../../assets/background/bg_image_3.jpg';
+import img4 from '../../assets/background/bg_image_4.jpg';
+import img5 from '../../assets/background/bg_image_5.jpg';
+import img6 from '../../assets/background/bg_image_6.jpg';
+import img7 from '../../assets/background/bg_image_7.jpg';
+import img8 from '../../assets/background/bg_image_8.jpg';
+import img9 from '../../assets/background/bg_image_9.jpg';
+import img10 from '../../assets/background/bg_image_10.jpg';
+import img11 from '../../assets/background/bg_image_11.jpeg';
+import img12 from '../../assets/background/bg_image_12.jpeg';
+import img13 from '../../assets/background/bg_image_13.jpeg';
+import img14 from '../../assets/background/bg_image_14.jpg';
 
 const images = [
   `url(${img1})`,
@@ -32,7 +31,6 @@ const images = [
   `url(${img12})`,
   `url(${img13})`,
   `url(${img14})`,
-  `url(${img15})`,
 ];
 
 export default function BackgroundCarousel() {

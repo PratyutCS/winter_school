@@ -49,7 +49,7 @@ export default function BackgroundCarousel() {
         />
       ))}
       {/* <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" /> */}
-      <div className="absolute inset-0 bg-white/60" />
+      <div className="absolute inset-0 bg-white/35" />
 
     </div>
   );

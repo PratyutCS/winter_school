@@ -172,21 +172,52 @@ html {
 }
 
 /* Custom Scrollbar */
+/* For Webkit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(46, 42, 48, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(46, 42, 48, 0.4);
+  background: linear-gradient(to bottom, #7c3aed, #ec4899);
   border-radius: 10px;
-  transition: background 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(46, 42, 48, 0.6);
+  background: linear-gradient(to bottom, #6b2eae, #d43f8d);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7c3aed rgba(255, 255, 255, 0.1);
+}
+
+@keyframes glowing-border-light {
+  0% {
+    border-image-source: linear-gradient(to right, #7c3aed, #ec4899);
+  }
+  25% {
+    border-image-source: linear-gradient(to right, #ec4899, #7c3aed);
+  }
+  50% {
+    border-image-source: linear-gradient(to right, #7c3aed, #ec4899);
+  }
+  75% {
+    border-image-source: linear-gradient(to right, #ec4899, #7c3aed);
+  }
+  100% {
+    border-image-source: linear-gradient(to right, #7c3aed, #ec4899);
+  }
+}
+
+.glowing-border-light {
+  border-top: 4px solid;
+  border-image-slice: 1;
+  animation: glowing-border-light 10s linear infinite;
 }

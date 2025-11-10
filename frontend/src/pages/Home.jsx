@@ -71,14 +71,14 @@ const Home = () => {
           </h1>
 
           <div className="text-center space-y-1.5 text-[#2e2a30]/80">
-            <p className="text-base sm:text-lg">December 15-17, 2025 · IIT Bhilai</p>
+            <p className="text-base sm:text-lg">December 07-09, 2025 · IIT Bhilai</p>
             <p className="text-sm sm:text-base italic">
               A Convergence of Cryptography, Security & Research
             </p>
           </div>
 
           <div className="mt-6 sm:mt-8">
-            <Countdown targetDate="2025-12-15T10:00:00+05:30" currentDate="2025-11-08 18:07:05" />
+            <Countdown targetDate="2025-12-07T00:00:00+05:30" />
           </div>
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3">
@@ -231,9 +231,9 @@ const Home = () => {
                           <div className="text-center">
                             <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
                                          group-hover:text-[#7c3aed] transition-colors duration-300">
-                              Registration Opens
+                              Registration
                             </h3>
-                            <p className="text-sm text-[#2e2a30]/70">December 05, 2025</p>
+                            <p className="text-sm text-[#2e2a30]/70">November 09 - December 01, 2025</p>
                           </div>
                         </div>
             

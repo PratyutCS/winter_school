@@ -45,29 +45,13 @@ export default function Header() {
                            tracking-tight leading-tight text-[#2e2a30] truncate">
                 National Workshop on Cryptology
               </h1>
-              <div className="flex items-center space-x-2 sm:space-x-3">
-                <span className="text-xs sm:text-sm text-[#2e2a30]/70
-                               font-medium truncate">
-                  CRSI Flagship Event
-                </span>
-                <span className="w-1 h-1 rounded-full bg-[#7c3aed]"></span>
-                <span className="text-xs sm:text-sm font-semibold
-                               bg-gradient-to-r from-[#7c3aed] to-[#ec4899]
-                               bg-clip-text text-transparent whitespace-nowrap">
-                  December 2025
-                </span>
-              </div>
+              
             </div>
           </div>
 
           {/* Right: Partner Logos */}
           <div className="flex items-center space-x-2 sm:space-x-4">
-            {/* Countdown for mobile */}
-            <div className="sm:hidden text-xs text-[#2e2a30]/70 font-medium
-                          bg-white/50 px-2 py-1 rounded-full backdrop-blur-sm">
-              {/* 37 days remaining until Dec 15, 2025 */}
-              <span>37 days remaining</span>
-            </div>
+
 
             {/* Partner Logo Container */}
             <div className="flex items-center space-x-2 sm:space-x-4 ml-auto sm:ml-0">
@@ -84,11 +68,11 @@ export default function Header() {
                 <img
                   src={decipheredLogo}
                   alt="Deciphered"
-                  className="w-6 sm:w-8 lg:w-10 aspect-square object-contain
+                  className="w-8 h-8 sm:w-8 lg:w-10 aspect-square object-contain
                            rounded-full transition-transform duration-500
                            group-hover:scale-110"
                 />
-                <span className="hidden sm:block text-xs lg:text-sm
+                <span className="text-[10px] sm:text-xs lg:text-sm
                                font-medium text-[#2e2a30] opacity-80
                                group-hover:opacity-100">
                   Deciphered
@@ -108,11 +92,11 @@ export default function Header() {
                 <img
                   src={iitBhilaiLogo}
                   alt="IIT Bhilai"
-                  className="w-6 sm:w-8 lg:w-10 aspect-square object-contain
+                  className="w-8 h-8 sm:w-8 lg:w-10 aspect-square object-contain
                            rounded-full transition-transform duration-500
                            group-hover:scale-110"
                 />
-                <span className="hidden sm:block text-xs lg:text-sm
+                <span className="text-[10px] sm:text-xs lg:text-sm
                                font-medium text-[#2e2a30] opacity-80
                                group-hover:opacity-100">
                   IIT Bhilai

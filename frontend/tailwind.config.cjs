@@ -3,6 +3,9 @@ module.exports = {
   theme: {
     
     extend: {
+      boxShadow: {
+        glow: '0 8px 32px 0 rgba(124, 58, 237, 0.15)',
+      },
       animation: {
         'fade-in': 'fadeIn 0.4s ease-out',
         'gradient-x': 'gradientX 3s ease infinite',

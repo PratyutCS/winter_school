@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../../components/Footer';
+import GlowingBox from '../../components/GlowingBox';
 
 export default function CodeOfConduct() {
   useEffect(() => {
@@ -16,8 +17,8 @@ export default function CodeOfConduct() {
     <div className="min-h-screen flex flex-col pt-[140px]">
       <main className="flex-grow px-4 md:px-8 pb-12">
         <div className="max-w-4xl mx-auto mt-8">
-          <div
-            className="bg-white/30 backdrop-blur-xl border border-white/40 rounded-3xl p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
+          <GlowingBox
+            className="p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
             data-aos="fade-up"
           >
             <div className="space-y-8 text-[#2e2a30]">
@@ -153,7 +154,7 @@ export default function CodeOfConduct() {
                 </p>
               </div>
             </div>
-          </div>
+          </GlowingBox>
         </div>
       </main>
       <Footer />

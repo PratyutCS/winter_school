@@ -29,7 +29,7 @@ export default function Countdown({ targetDate }) {
 
   return (
     <div className="flex gap-2 sm:gap-4 md:gap-6 justify-center mt-4 sm:mt-6 md:mt-8">
-      {items.map((it, i) => (
+      {items.map((it, _i) => (
         <div
           key={it.k}
           className={`text-center px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 rounded-xl sm:rounded-2xl 

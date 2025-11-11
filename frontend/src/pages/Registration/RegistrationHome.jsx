@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from '../../components/Footer';
+import GlowingBox from '../../components/GlowingBox';
 
 export default function RegistrationHome() {
   useEffect(() => {
@@ -18,9 +18,8 @@ export default function RegistrationHome() {
       <main className="flex-grow px-4 md:px-8 pb-12">
         <div className="max-w-4xl mx-auto mt-8">
           {/* Main Registration Card */}
-          <div
-            className="bg-white/30 backdrop-blur-xl border border-white/40 rounded-3xl p-8 md:p-12
-                       shadow-[0_20px_60px_rgba(0,0,0,0.15)] hover:shadow-[0_25px_70px_rgba(0,0,0,0.2)]
+          <GlowingBox
+            className="p-8 md:p-12
                        transition-all duration-500 mb-8"
             data-aos="fade-up"
           >
@@ -75,7 +74,7 @@ export default function RegistrationHome() {
                 </p>
               </div>
             </div>
-          </div>
+          </GlowingBox>
 
           {/* Important Information */}
           <div
@@ -83,19 +82,17 @@ export default function RegistrationHome() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="bg-white/20 backdrop-blur-md border border-white/40 rounded-2xl p-6
-                          hover:bg-white/30 transition-all duration-300">
+            <GlowingBox className="p-6 hover:bg-white/30 transition-all duration-300">
               <h3 className="text-xl font-bold text-[#2e2a30] mb-3">Registration Deadline</h3>
               <p className="text-[#2e2a30]/80">December 10, 2025</p>
               <p className="text-sm text-[#2e2a30]/60 mt-2">Limited seats available, register early!</p>
-            </div>
+            </GlowingBox>
 
-            <div className="bg-white/20 backdrop-blur-md border border-white/40 rounded-2xl p-6
-                          hover:bg-white/30 transition-all duration-300">
+            <GlowingBox className="p-6 hover:bg-white/30 transition-all duration-300">
               <h3 className="text-xl font-bold text-[#2e2a30] mb-3">Workshop Dates</h3>
               <p className="text-[#2e2a30]/80">December 15-17, 2025</p>
               <p className="text-sm text-[#2e2a30]/60 mt-2">Three days of intensive learning</p>
-            </div>
+            </GlowingBox>
           </div>
 
           {/* Code of Conduct Link */}
@@ -115,7 +112,6 @@ export default function RegistrationHome() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

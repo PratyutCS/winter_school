@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from '../components/Footer';
+import GlowingBox from '../components/GlowingBox';
 
 // Sponsor images
 import dstLogo from '../../assets/sponsors/dst.png';
@@ -28,37 +28,36 @@ export default function Sponsors() {
   return (
     <div className="min-h-screen flex flex-col pt-[140px]">
       <main className="flex-grow px-4 md:px-8 pb-12">
-        <div className="max-w-4xl mx-auto mt-8">
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {sponsors.map((sponsor, index) => (
-              <a
-                key={index}
-                href={sponsor.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-aos="fade-up"
-                data-aos-delay={100 + index * 100}
-                className="group block bg-white/10 backdrop-blur-xl rounded-2xl p-6
-                           border border-white/20 shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]
-                           transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-              >
-                <div className="flex flex-col items-center text-center">
-                  <img
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    className="h-24 object-contain mb-4"
-                  />
-                  <h3 className="text-lg font-semibold text-[#2e2a30] group-hover:text-[#7c3aed] transition-colors duration-300">
-                    {sponsor.name}
-                  </h3>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </main>
-      <Footer />
+                <div className="max-w-4xl mx-auto mt-8">
+                  <GlowingBox className="p-6 sm:p-8 md:p-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                      {sponsors.map((sponsor, index) => (
+                        <a
+                          key={index}
+                          href={sponsor.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          data-aos="fade-up"
+                          data-aos-delay={100 + index * 100}
+                          className="group block transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                        >
+                          <GlowingBox className="p-6">
+                            <div className="flex flex-col items-center text-center">
+                              <img
+                                src={sponsor.logo}
+                                alt={sponsor.name}
+                                className="h-24 object-contain mb-4"
+                              />
+                              <h3 className="text-lg font-semibold text-[#2e2a30] group-hover:text-[#7c3aed] transition-colors duration-300">
+                                {sponsor.name}
+                              </h3>
+                            </div>
+                          </GlowingBox>
+                        </a>
+                      ))}
+                    </div>
+                  </GlowingBox>
+                </div>      </main>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from '../components/Footer';
+import GlowingBox from '../components/GlowingBox';
 
 const schedule = [
   // Day 1
@@ -75,7 +75,7 @@ export default function Program() {
     <div className="min-h-screen flex flex-col pt-[140px]">
       <main className="flex-grow px-4 md:px-8 pb-12">
         <div className="max-w-5xl mx-auto">
-          <div className="mt-8 mb-16 bg-white/20 backdrop-blur-xl border border-white/30 rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg" data-aos="fade-up">
+          <GlowingBox className="mt-8 mb-16 p-4 sm:p-6 md:p-8 shadow-lg" data-aos="fade-up">
             <div className="flex justify-center border-b border-white/30 mb-4">
               {['Day 1', 'Day 2', 'Day 3'].map((day, index) => (
                 <button
@@ -115,10 +115,9 @@ export default function Program() {
                 </tbody>
               </table>
             </div>
-          </div>
+          </GlowingBox>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

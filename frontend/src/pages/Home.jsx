@@ -1,3 +1,4 @@
+import GlowingBox from "../components/GlowingBox";
 import { Link } from "react-router-dom";
 import Countdown from "../components/Countdown";
 import Footer from "../components/Footer";
@@ -11,7 +12,6 @@ import mostafizarImg from "../../assets/speakers/Mostafizar.jpg";
 import angshumanImg from "../../assets/speakers/angshuman.jpg";
 import satrajitImg from "../../assets/speakers/satrajit.jpg";
 import sabyasachiImg from "../../assets/speakers/sabyacachi.jpg";
-import aninditaImg from "../../assets/speakers/anindita.jpg";
 import avijitImg from "../../assets/speakers/avijit.jpg";
 import avikImg from "../../assets/speakers/avik.jpg";
 import dipanwitaImg from "../../assets/speakers/Dipanwita.jpg";
@@ -58,11 +58,9 @@ const Home = () => {
     <main className="min-h-screen overflow-x-hidden max-w-full pt-[120px]">
       {/* Hero Section */}
       <section className="w-full px-4 pt-6 pb-12 sm:pt-8 sm:pb-16 overflow-hidden">
-        <div
+        <GlowingBox
           data-aos="fade-up"
-          className="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl rounded-2xl 
-                     p-5 sm:p-10 border border-white/20
-                     shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]
+          className="max-w-4xl mx-auto 
                      transition-all duration-300"
         >
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#2e2a30] 
@@ -103,7 +101,7 @@ const Home = () => {
               View Program
             </Link>
           </div>
-        </div>
+        </GlowingBox>
       </section>
 
       {/* About Section */}
@@ -116,16 +114,16 @@ const Home = () => {
             About the Workshop
           </h2>
           
-          <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-5 sm:p-8
-                       border border-white/20 shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]">
-                                    <div className="space-y-4 text-[#2e2a30]/90 text-sm sm:text-base leading-relaxed text-justify">
-                                      <p className="first-letter:text-3xl first-letter:font-bold">
-                                        In a landmark collaboration, the Indian Institute of Technology Bhilai and the Cryptology Research Society of India (CRSI) are proud to present the <strong>National Workshop on Cryptology (NWC 2025)</strong>. As the flagship annual event of CRSI, this workshop serves as a premier national forum, dedicated to uniting the brightest minds in cryptology and information security. We warmly invite researchers, academicians, students, and industry pioneers to converge for an enriching exchange of knowledge and ideas, fostering a community dedicated to advancing the frontiers of digital security.
-                                      </p>
-                                      <p>
-                                        The workshop agenda is meticulously crafted to provide a comprehensive exploration of modern cryptography. Participants will engage with eminent experts through a series of invited talks, in-depth tutorials, and interactive sessions. The curriculum will span a wide spectrum of critical topics, including <strong>Post-Quantum Cryptography</strong>, <strong>Lightweight Cryptography</strong>, <strong>Secure Protocols</strong>, and <strong>Blockchain Security</strong>. Beyond the sessions, the workshop will offer ample opportunities for networking, poster presentations, and collaborative discussions. Our vision is to cultivate a vibrant ecosystem for cryptographic research in India, empowering the next generation of scholars and professionals to shape a secure digital future.
-                                      </p>
-                                    </div>          </div>
+          <GlowingBox className="p-5 sm:p-8">
+            <div className="space-y-4 text-[#2e2a30]/90 text-sm sm:text-base leading-relaxed text-justify">
+              <p className="first-letter:text-3xl first-letter:font-bold">
+                In a landmark collaboration, the Indian Institute of Technology Bhilai and the Cryptology Research Society of India (CRSI) are proud to present the <strong>National Workshop on Cryptology (NWC 2025)</strong>. As the flagship annual event of CRSI, this workshop serves as a premier national forum, dedicated to uniting the brightest minds in cryptology and information security. We warmly invite researchers, academicians, students, and industry pioneers to converge for an enriching exchange of knowledge and ideas, fostering a community dedicated to advancing the frontiers of digital security.
+              </p>
+              <p>
+                The workshop agenda is meticulously crafted to provide a comprehensive exploration of modern cryptography. Participants will engage with eminent experts through a series of invited talks, in-depth tutorials, and interactive sessions. The curriculum will span a wide spectrum of critical topics, including <strong>Post-Quantum Cryptography</strong>, <strong>Lightweight Cryptography</strong>, <strong>Secure Protocols</strong>, and <strong>Blockchain Security</strong>. Beyond the sessions, the workshop will offer ample opportunities for networking, poster presentations, and collaborative discussions. Our vision is to cultivate a vibrant ecosystem for cryptographic research in India, empowering the next generation of scholars and professionals to shape a secure digital future.
+              </p>
+            </div>
+          </GlowingBox>
         </div>
       </section>
 
@@ -149,9 +147,7 @@ const Home = () => {
                 data-aos-easing="cubic-bezier(0.645, 0.045, 0.355, 1)"
                 className="group relative"
               >
-                <div className="bg-white/10 backdrop-blur-xl rounded-xl p-3 sm:p-4
-                             border border-white/20 shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]
-                             transition-all duration-500 hover:scale-[1.02]">
+                <GlowingBox className="p-3 sm:p-4 transition-all duration-500 hover:scale-[1.02]">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-3 rounded-lg overflow-hidden
                                border border-white/20 group-hover:border-[#7c3aed]/20
                                transition-all duration-500">
@@ -174,7 +170,7 @@ const Home = () => {
                       {speaker.university}
                     </p>
                   </div>
-                </div>
+                </GlowingBox>
               </div>
             ))}
           </div>
@@ -197,14 +193,14 @@ const Home = () => {
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
-                className="bg-white/10 backdrop-blur-xl rounded-xl p-4
-                         border border-white/20 shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]
-                         transition-all duration-300 hover:scale-[1.02] group"
+                className="group"
               >
-                <h3 className="font-medium text-sm sm:text-base text-center text-[#2e2a30]
-                             group-hover:text-[#7c3aed] transition-colors duration-300">
-                  {area}
-                </h3>
+                <GlowingBox className="p-4 transition-all duration-300 hover:scale-[1.02]">
+                  <h3 className="font-medium text-sm sm:text-base text-center text-[#2e2a30]
+                               group-hover:text-[#7c3aed] transition-colors duration-300">
+                    {area}
+                  </h3>
+                </GlowingBox>
               </div>
             ))}
           </div>
@@ -224,32 +220,32 @@ const Home = () => {
                       <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                         <div
                           data-aos="fade-right"
-                          className="bg-white/10 backdrop-blur-xl rounded-xl p-4 sm:p-6
-                                   border border-white/20 shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]
-                                   transition-all duration-300 hover:scale-[1.02] group"
+                          className="group"
                         >
-                          <div className="text-center">
-                            <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
-                                         group-hover:text-[#7c3aed] transition-colors duration-300">
-                              Registration
-                            </h3>
-                            <p className="text-sm text-[#2e2a30]/70">November 09 - December 01, 2025</p>
-                          </div>
+                          <GlowingBox className="p-4 sm:p-6 transition-all duration-300 hover:scale-[1.02]">
+                            <div className="text-center">
+                              <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
+                                           group-hover:text-[#7c3aed] transition-colors duration-300">
+                                Registration
+                              </h3>
+                              <p className="text-sm text-[#2e2a30]/70">November 09 - December 01, 2025</p>
+                            </div>
+                          </GlowingBox>
                         </div>
             
                         <div
                           data-aos="fade-left"
-                          className="bg-white/10 backdrop-blur-xl rounded-xl p-4 sm:p-6
-                                   border border-white/20 shadow-[0_8px_32px_0_rgba(124,58,237,0.15)]
-                                   transition-all duration-300 hover:scale-[1.02] group"
+                          className="group"
                         >
-                          <div className="text-center">
-                            <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
-                                         group-hover:text-[#7c3aed] transition-colors duration-300">
-                              Workshop Dates
-                            </h3>
-                            <p className="text-sm text-[#2e2a30]/70">December 07–09, 2025</p>
-                          </div>
+                          <GlowingBox className="p-4 sm:p-6 transition-all duration-300 hover:scale-[1.02]">
+                            <div className="text-center">
+                              <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
+                                           group-hover:text-[#7c3aed] transition-colors duration-300">
+                                Workshop Dates
+                              </h3>
+                              <p className="text-sm text-[#2e2a30]/70">December 07–09, 2025</p>
+                            </div>
+                          </GlowingBox>
                         </div>
                       </div>
                     </div>

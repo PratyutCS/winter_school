@@ -1,12 +1,13 @@
 import React from 'react';
 import Footer from '../../components/Footer';
+import GlowingBox from '../../components/GlowingBox';
 
 export default function Venue(){
   return (
     <div className="min-h-screen flex flex-col pt-[140px]">
       <main className="flex-grow px-4 md:px-8 pb-12">
         <div className="mt-8 max-w-4xl mx-auto">
-          <div className="bg-white/30 backdrop-blur-xl border border-white/40 rounded-3xl p-8 md:p-12 shadow-lg">
+          <GlowingBox className="p-8 md:p-12">
             <p className="text-lg text-[#2e2a30]/80 leading-relaxed text-justify mb-8">
               The National Workshop on Cryptology (NWC 2025) will be graciously hosted at the state-of-the-art Lecture Hall Complex within the campus of the Indian Institute of Technology Bhilai, situated in Kutelabhata, Bhilai, Chhattisgarh.
             </p>
@@ -25,9 +26,9 @@ export default function Venue(){
                 <div><strong>By Road:</strong> The campus is well-connected by road from both Durg and Raipur. Regular taxi and bus services are readily available for a convenient commute.</div>
               </li>
             </ul>
-          </div>
+          </GlowingBox>
 
-          <div className="mt-8 rounded-3xl overflow-hidden shadow-lg border border-white/40">
+          <GlowingBox className="mt-8 overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.432579926465!2d81.318887!3d21.2470689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28db65364103d5%3A0x9ca0815dc09dac5f!2sIndian%20Institute%20of%20Technology%20Bhilai!5e0!3m2!1sen!2sin!4v1678886333148!5m2!1sen!2sin"
               width="100%"
@@ -37,7 +38,7 @@ export default function Venue(){
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </GlowingBox>
         </div>
       </main>
       <Footer />

@@ -10,6 +10,7 @@ export default function Navbar() {
     { label: 'Program', path: '/program' },
     { label: 'Registration', path: '/registration' },
     { label: 'Submission of Poster', path: '/submission-of-poster' },
+    { label: 'Travel', path: '/travel' },
     { label: 'Venue', path: '/travel/venue' },
     { label: 'Sponsors', path: '/sponsors' },
   ];

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       boxShadow: {
         glow: '0 8px 32px 0 rgba(124, 58, 237, 0.15)',
+        'glow-medium': '0 0 25px 0 rgba(124, 58, 237, 0.25)',
         'glow-strong': '0 0 40px 5px rgba(124, 58, 237, 0.5)', // New stronger glow
       },
       animation: {

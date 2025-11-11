@@ -1,5 +1,6 @@
 import React from 'react';
 import GlowingBox from '../../components/GlowingBox';
+import { Plane, Train, Car } from 'lucide-react'; // Added imports
 
 export default function Venue(){
   return (
@@ -13,15 +14,15 @@ export default function Venue(){
             <h3 className="text-2xl font-bold text-[#2e2a30] mb-4">Getting Here</h3>
             <ul className="space-y-4 text-[#2e2a30]/80">
               <li className="flex items-start">
-                <svg className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <Plane className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" />
                 <div><strong>By Air:</strong> The nearest airport is Swami Vivekananda Airport, Raipur (RPR), located approximately 45 km from the campus.</div>
               </li>
               <li className="flex items-start">
-                <svg className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <Train className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" />
                 <div><strong>By Rail:</strong> The closest major railway station is Durg Junction (DURG), which is about 10 km away.</div>
               </li>
               <li className="flex items-start">
-                <svg className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <Car className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" />
                 <div><strong>By Road:</strong> The campus is well-connected by road from both Durg and Raipur. Regular taxi and bus services are readily available for a convenient commute.</div>
               </li>
             </ul>

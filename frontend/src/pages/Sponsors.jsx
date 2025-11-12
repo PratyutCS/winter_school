@@ -67,7 +67,7 @@ export default function Sponsors() {
   }, [sponsors]);
 
   return (
-    <div className="min-h-screen flex flex-col pt-[140px]">
+    <div className="flex flex-col pt-[140px]">
       <main className="flex-grow px-4 md:px-8 pb-12">
         <div className="text-center">
           <GlowingBox>

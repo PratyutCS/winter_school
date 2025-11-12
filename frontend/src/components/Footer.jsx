@@ -21,10 +21,10 @@ export default function Footer() {
               <li><Link to="/" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/' ? 'text-[#7c3aed]' : ''}`}>Home</Link></li>
               <li><Link to="/program" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/program' ? 'text-[#7c3aed]' : ''}`}>Program</Link></li>
               <li><Link to="/registration" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/registration' ? 'text-[#7c3aed]' : ''}`}>Registration</Link></li>
-              <li><Link to="/submission-of-poster" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/submission-of-poster' ? 'text-[#7c3aed]' : ''}`}>Submission of Poster</Link></li>
-              <li><Link to="/travel" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/travel' ? 'text-[#7c3aed]' : ''}`}>Travel</Link></li>
+              <li><Link to="/submission-of-poster" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/submission-of-poster' ? 'text-[#7c3aed]' : ''}`}>Poster Submission</Link></li>
               <li><Link to="/travel/venue" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/travel/venue' ? 'text-[#7c3aed]' : ''}`}>Venue</Link></li>
               <li><Link to="/sponsors" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/sponsors' ? 'text-[#7c3aed]' : ''}`}>Sponsors</Link></li>
+              <li><Link to="/travel" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/travel' ? 'text-[#7c3aed]' : ''}`}>Nearby Wonders</Link></li>
             </ul>
           </div>
           <div className="space-y-4">

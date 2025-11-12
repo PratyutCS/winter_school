@@ -31,6 +31,7 @@ const Home = () => {
   const speakers = [
     { name: "Prof. Bimal Kumar Roy", expertise: "Combinatorics, and application of Statistics in Cryptology and Design of Experiments", university: "Indian Statistical Institute (ISI)", image: brkImg }, // New speaker
     { name: "Prof. Dipanwita Roy Chowdhury", expertise: "Symmetric Key Cryptography", university: "IIT Kharagpur", image: dipanwitaImg },
+    { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
     { name: "Dr. Shibam Ghosh", expertise: "Symmetric Key Cryptanalysis", university: "INRIA", image: shimanImg },
     { name: "Dr. Mostafizar Rahman", expertise: "Symmetric Key Cryptanalysis", university: "NTU Singapore", image: mostafizarImg },
     { name: "Dr. Angshuman Karmakar", expertise: "Post Quantum Cryptography", university: "IIT Kanpur", image: angshumanImg },
@@ -39,7 +40,6 @@ const Home = () => {
     // { name: "Dr. Anindita Banerjee", expertise: "Quantum Communication", university: "CDAC Pune", image: aninditaImg },
     { name: "Dr. Avijit Dutta", expertise: "Provable Security", university: "TCG Crest", image: avijitImg },
     { name: "Dr. Avik Chakraborti", expertise: "White Box Cryptography", university: "TCG Crest", image: avikImg },
-    { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
   ];
 
   const focusAreas = [

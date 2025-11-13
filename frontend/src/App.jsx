@@ -11,7 +11,6 @@ import Program from './pages/Program';
 import TravelHome from './pages/Travel/TravelHome';
 import Venue from './pages/Travel/Venue';
 import Sponsors from './pages/Sponsors';
-import SubmissionOfPoster from './pages/SubmissionOfPoster';
 import ErrorPage from './pages/ErrorPage';
 import BackgroundCarousel from './components/BackgroundCarousel';
 
@@ -90,7 +89,6 @@ export default function App() {
             <Route path="/travel" element={<TravelHome/>} />
             <Route path="/travel/venue" element={<Venue/>} />
             <Route path="/sponsors" element={<Sponsors/>} />
-            <Route path="/submission-of-poster" element={<SubmissionOfPoster />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>

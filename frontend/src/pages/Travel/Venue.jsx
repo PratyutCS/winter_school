@@ -9,7 +9,7 @@ export default function Venue(){
         <div className="mt-8 max-w-4xl mx-auto">
           <GlowingBox className="p-8 md:p-12">
             <p className="text-lg text-[#2e2a30]/80 leading-relaxed text-justify mb-8">
-              The National Workshop on Cryptology (NWC 2025) will be graciously hosted at the state-of-the-art Lecture Hall Complex within the campus of the Indian Institute of Technology Bhilai, situated in Kutelabhata, Bhilai, Chhattisgarh.
+              The Crypto Winter School 2025 will be graciously hosted at the state-of-the-art Lecture Hall Complex within the campus of the Indian Institute of Technology Bhilai, situated in Kutelabhata, Bhilai, Chhattisgarh.
             </p>
             <h3 className="text-2xl font-bold text-[#2e2a30] mb-4">Getting Here</h3>
             <ul className="space-y-4 text-[#2e2a30]/80">

@@ -43,7 +43,7 @@ export default function Header() {
             <div className="min-w-0">
               <h1 className="text-base sm:text-xl lg:text-2xl font-bold
                            tracking-tight leading-tight text-[#2e2a30] truncate">
-                National Workshop on Cryptology
+                Crypto Winter School
               </h1>
               
             </div>

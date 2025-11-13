@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GlowingBox from '../../components/GlowingBox';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Ticket, Building } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const TravelHome = () => {
   useEffect(() => {
@@ -164,7 +165,49 @@ const TravelHome = () => {
   return (
     <main className="min-h-screen overflow-x-hidden max-w-full pt-[120px]">
       <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
+        <div className="max-w-4xl mx-auto">
+          <GlowingBox
+            data-aos="fade-up"
+            className="p-6 sm:p-8 mb-12"
+          >
+            <h2 className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-6">
+              Travel Information
+            </h2>
+            <div className="space-y-4 text-[#2e2a30]/90 text-sm sm:text-base leading-relaxed text-justify">
+              <div className="flex items-start">
+                <Ticket className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <strong>Travel Reimbursement:</strong> Students are eligible for travel expense reimbursement up to 3rd AC train fare or equivalent, as per institute norms. Please keep your travel receipts and documents for the reimbursement process.
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Building className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <strong>Venue Information:</strong> For detailed directions to the venue, accommodation information, and local transport options, please visit our Venue page.
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <Link
+                to="/travel/venue"
+                className="inline-flex items-center justify-center px-6 py-2.5 rounded-xl bg-[#7c3aed] text-white 
+                           font-medium text-sm sm:text-base tracking-wide text-center
+                           transition-all duration-300 hover:shadow-[0_0_20px_rgba(124,58,237,0.5)]
+                           active:scale-95"
+              >
+                Go to Venue Page
+              </Link>
+            </div>
+          </GlowingBox>
+        </div>
+
         <div className="max-w-7xl mx-auto">
+          <h2 
+            data-aos="fade-up"
+            className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
+          >
+            Nearby Attractions
+          </h2>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {nearbyAttractions.map((place, index) => (

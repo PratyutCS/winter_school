@@ -21,7 +21,6 @@ export default function Footer() {
               <li><Link to="/" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/' ? 'text-[#7c3aed]' : ''}`}>Home</Link></li>
               <li><Link to="/program" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/program' ? 'text-[#7c3aed]' : ''}`}>Program</Link></li>
               <li><Link to="/registration" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/registration' ? 'text-[#7c3aed]' : ''}`}>Registration</Link></li>
-              <li><Link to="/submission-of-poster" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/submission-of-poster' ? 'text-[#7c3aed]' : ''}`}>Poster Submission</Link></li>
               <li><Link to="/travel/venue" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/travel/venue' ? 'text-[#7c3aed]' : ''}`}>Venue</Link></li>
               <li><Link to="/sponsors" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/sponsors' ? 'text-[#7c3aed]' : ''}`}>Sponsors</Link></li>
               <li><Link to="/travel" className={`text-[#2e2a30]/70 hover:text-[#7c3aed] transition-colors duration-300 ${location.pathname === '/travel' ? 'text-[#7c3aed]' : ''}`}>Nearby Wonders</Link></li>
@@ -38,10 +37,10 @@ export default function Footer() {
                 <Mail className="w-5 h-5 mr-2 text-[#7c3aed]" />
                 <a href="mailto:crypto@iitbhilai.ac.in" className="hover:text-[#7c3aed] transition-colors duration-300">crypto@iitbhilai.ac.in</a>
               </li>
-              <li className="flex items-center text-[#2e2a30]/70">
+              {/* <li className="flex items-center text-[#2e2a30]/70">
                 <Phone className="w-5 h-5 mr-2 text-[#7c3aed]" />
                 +91-XXX-XXXXXXX
-              </li>
+              </li> */}
               <li className="flex items-center text-[#2e2a30]/70">
                 <MapPin className="w-5 h-5 mr-2 text-[#7c3aed]" />
                 <Link to="/travel/venue" className="hover:text-[#7c3aed] transition-colors duration-300">IIT Bhilai, Chhattisgarh, India</Link>

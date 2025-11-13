@@ -13,9 +13,9 @@ import satrajitImg from "../../assets/speakers/satrajit.jpg";
 import sabyasachiImg from "../../assets/speakers/sabyacachi.jpg";
 import avijitImg from "../../assets/speakers/avijit.jpg";
 import avikImg from "../../assets/speakers/avik.jpg";
-import dipanwitaImg from "../../assets/speakers/Dipanwita.jpg";
 import mridulImg from "../../assets/speakers/mridul_nandi.jpg";
-import brkImg from "../../assets/speakers/brk.avif"; // New import
+import souradyutiImg from "../../assets/logo.png";
+import dhimanImg from "../../assets/logo.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -31,28 +31,29 @@ const Home = () => {
   }, []);
 
   const speakers = [
-    { name: "Prof. Bimal Kumar Roy", expertise: "Combinatorics, and application of Statistics in Cryptology and Design of Experiments", university: "Indian Statistical Institute (ISI)", image: brkImg }, // New speaker
-    { name: "Prof. Dipanwita Roy Chowdhury", expertise: "Symmetric Key Cryptography", university: "IIT Kharagpur", image: dipanwitaImg },
     { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
-    { name: "Dr. Shibam Ghosh", expertise: "Symmetric Key Cryptanalysis", university: "INRIA", image: shimanImg },
-    { name: "Dr. Mostafizar Rahman", expertise: "Symmetric Key Cryptanalysis", university: "NTU Singapore", image: mostafizarImg },
+    { name: "Dr. Souradyuti Paul", expertise: "Cryptographic Protocols", university: "IIT Bhilai", image: souradyutiImg },
     { name: "Dr. Angshuman Karmakar", expertise: "Post Quantum Cryptography", university: "IIT Kanpur", image: angshumanImg },
+    { name: "Dr. Avik Chakraborti", expertise: "White Box Cryptography", university: "TCG Crest", image: avikImg },
     { name: "Dr. Satrajit Ghosh", expertise: "Multi-Party Computation", university: "IIT Kharagpur", image: satrajitImg },
     { name: "Dr. Sabyasachi Karati", expertise: "Public Key Cryptography", university: "ISI Kolkata", image: sabyasachiImg },
-    // { name: "Dr. Anindita Banerjee", expertise: "Quantum Communication", university: "CDAC Pune", image: aninditaImg },
+    { name: "Dr. Dhiman Saha", expertise: "Symmetric Key Cryptanalysis", university: "IIT Bhilai", image: dhimanImg },
     { name: "Dr. Avijit Dutta", expertise: "Provable Security", university: "TCG Crest", image: avijitImg },
-    { name: "Dr. Avik Chakraborti", expertise: "White Box Cryptography", university: "TCG Crest", image: avikImg },
+    { name: "Dr. Mostafizar Rahman", expertise: "Symmetric Key Cryptanalysis", university: "NTU Singapore", image: mostafizarImg },
+    { name: "Dr. Shibam Ghosh", expertise: "Symmetric Key Cryptanalysis", university: "INRIA", image: shimanImg },
   ];
 
   const focusAreas = [
-    "Symmetric Key Cryptanalysis",
-    "Post Quantum Cryptography",
-    "Multi-Party Computation",
-    "Public Key Cryptography",
-    "Quantum Communication",
-    "Provable Security",
-    "White Box Cryptography",
-    "Symmetric Key Cryptography"
+    "Provable Security and Foundations of Cryptography",
+    "Design and Implementation of Cryptographic Algorithms",
+    "Symmetric-Key Cryptography and Cryptanalysis",
+    "Fault Attacks on Quantum Safe Cryptography",
+    "Post-Quantum Cryptography and Lattice-Based Constructions",
+    "Quantum Symmetric Cryptology",
+    "Privacy-Preserving Protocols",
+    "Public-Key Cryptography and Zero-Knowledge Proofs",
+    "Secure Multi-Party Computation and Homomorphic Encryption",
+    "Quantum-Secure Communication Protocols"
   ];
 
   return (
@@ -66,18 +67,18 @@ const Home = () => {
         >
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#2e2a30] 
                        tracking-tight leading-tight text-center mb-4">
-            National Workshop on Cryptology 2025
+            Crypto Winter School 2025
           </h1>
 
           <div className="text-center space-y-1.5 text-[#2e2a30]/80">
-            <p className="text-base sm:text-lg">December 07-09, 2025 · IIT Bhilai</p>
+            <p className="text-base sm:text-lg">December 09-12, 2025 · IIT Bhilai</p>
             <p className="text-sm sm:text-base italic">
               A Convergence of Cryptography, Security & Research
             </p>
           </div>
 
           <div className="mt-6 sm:mt-8">
-            <Countdown targetDate="2025-12-07T00:00:00+05:30" />
+            <Countdown targetDate="2025-12-09T12:00:00+05:30" />
           </div>
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3">
@@ -118,10 +119,10 @@ const Home = () => {
           <GlowingBox className="p-5 sm:p-8">
             <div className="space-y-4 text-[#2e2a30]/90 text-sm sm:text-base leading-relaxed text-justify">
               <p className="first-letter:text-3xl first-letter:font-bold">
-                In a landmark collaboration, the Indian Institute of Technology Bhilai and the Cryptology Research Society of India (CRSI) are proud to present the <strong>National Workshop on Cryptology (NWC 2025)</strong>. As the flagship annual event of CRSI, this workshop serves as a premier national forum, dedicated to uniting the brightest minds in cryptology and information security. We warmly invite researchers, academicians, students, and industry pioneers to converge for an enriching exchange of knowledge and ideas, fostering a community dedicated to advancing the frontiers of digital security.
+                The Crypto Winter School (CWS 2025) aims to cultivate advanced research capabilities in cryptology, both from classical and post-quantum perspectives, among India's budding researchers. With the rapid evolution of quantum technologies posing significant threats to classical cryptographic primitives, it is imperative to equip researchers with the knowledge and skills necessary to design, analyse, and implement secure systems in the post-quantum era. The proposed Winter School directly aligns with the Human Resource Development (HRD) objectives of the National Quantum Mission (NQM) by strengthening national capacity in quantum-safe cryptography, building a pipeline of skilled researchers, fostering interdisciplinary collaboration, and increasing the impact and reach of the school by following a Dagstuhl-Seminar type format.
               </p>
               <p>
-                The workshop agenda is meticulously crafted to provide a comprehensive exploration of modern cryptography. Participants will engage with eminent experts through a series of invited talks, in-depth tutorials, and interactive sessions. The curriculum will span a wide spectrum of critical topics, including <strong>Post-Quantum Cryptography</strong>, <strong>Lightweight Cryptography</strong>, <strong>Secure Protocols</strong>, and <strong>Blockchain Security</strong>. Beyond the sessions, the workshop will offer ample opportunities for networking, poster presentations, and collaborative discussions. Our vision is to cultivate a vibrant ecosystem for cryptographic research in India, empowering the next generation of scholars and professionals to shape a secure digital future.
+                By providing hands-on exposure to real-world research under the guidance of eminent experts, CWS 2025 will create a fertile environment for innovation and sustainable research collaborations.
               </p>
             </div>
           </GlowingBox>
@@ -188,15 +189,15 @@ const Home = () => {
             Key Focus Areas
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
             {focusAreas.map((area, index) => (
               <div
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
-                className="group"
+                className="group w-full sm:w-1/2 lg:w-1/4 flex"
               >
-                <GlowingBox className="p-4 transition-all duration-300 hover:scale-[1.02]">
+                <GlowingBox className="p-4 transition-all duration-300 hover:scale-[1.02] w-full h-full flex items-center justify-center">
                   <h3 className="font-medium text-sm sm:text-base text-center text-[#2e2a30]
                                group-hover:text-[#7c3aed] transition-colors duration-300">
                     {area}
@@ -210,49 +211,34 @@ const Home = () => {
 
                   {/* Important Dates Section */}
                   <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
-                    <div className="max-w-4xl mx-auto">
-                      <h2
-                        data-aos="fade-up"
-                        className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
-                      >
-                        Important Dates
-                      </h2>
-            
-                      <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                        <div
-                          data-aos="fade-right"
-                          className="group cursor-pointer"
-                          onClick={() => navigate('/registration')}
-                        >
-                          <GlowingBox className="p-4 sm:p-6 transition-all duration-300 hover:scale-[1.02]">
-                            <div className="text-center">
-                              <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
-                                           group-hover:text-[#7c3aed] transition-colors duration-300">
-                                Registration
-                              </h3>
-                              <p className="text-sm text-[#2e2a30]/70">November 09 - December 01, 2025</p>
-                            </div>
-                          </GlowingBox>
-                        </div>
-            
-                        <div
-                          data-aos="fade-left"
-                          className="group cursor-pointer"
-                          onClick={() => navigate('/program')}
-                        >
-                          <GlowingBox className="p-4 sm:p-6 transition-all duration-300 hover:scale-[1.02]">
-                            <div className="text-center">
-                              <h3 className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
-                                           group-hover:text-[#7c3aed] transition-colors duration-300">
-                                Workshop Dates
-                              </h3>
-                              <p className="text-sm text-[#2e2a30]/70">December 07–09, 2025</p>
-                            </div>
-                          </GlowingBox>
-                        </div>
-                      </div>
-                    </div>
-                  </section>      
+  <div className="max-w-4xl mx-auto">
+    <h2
+      data-aos="fade-up"
+      className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
+    >
+      Important Dates
+    </h2>
+
+    <div className="grid sm:grid-cols-1 gap-3 sm:gap-4">
+      <div
+        data-aos="fade-up"
+        className="group cursor-pointer"
+        onClick={() => navigate('/program')}
+      >
+        <GlowingBox className="p-6 sm:p-8 transition-all duration-300 hover:scale-[1.02] max-w-md mx-auto text-center">
+          <h3
+            className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
+                       group-hover:text-[#7c3aed] transition-colors duration-300"
+          >
+            Workshop Dates
+          </h3>
+          <p className="text-sm text-[#2e2a30]/70">December 09–12, 2025</p>
+        </GlowingBox>
+      </div>
+    </div>
+  </div>
+</section>
+    
     </main>
   );
 };

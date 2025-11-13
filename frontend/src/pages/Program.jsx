@@ -4,42 +4,53 @@ import 'aos/dist/aos.css';
 import GlowingBox from '../components/GlowingBox';
 
 const schedule = [
-  // Day 1
+  // Dec 09
   [
-    { time: '9:00 - 10:00', event: 'Registration', chair: '', type: 'registration' },
-    { time: '10:00 - 10:45', event: 'Inauguration', chair: '', type: 'ceremony' },
-    { time: '10:45 - 11:45', event: 'BKR 1', chair: '', type: 'talk' },
-    { time: '11:45 - 12:00', event: 'Snacks & Tea', chair: 'DRC', type: 'break' },
-    { time: '12:00 - 13:00', event: 'BKR 2', chair: '', type: 'talk' },
-    { time: '13:00 - 14:00', event: 'Lunch', chair: '', type: 'break' },
-    { time: '14:00 - 15:00', event: 'DRC 1', chair: '', type: 'talk' },
-    { time: '15:00 - 15:15', event: 'Tea/Coffee', chair: 'HOD', type: 'break' },
-    { time: '15:15 - 16:15', event: 'DRC 2', chair: '', type: 'talk' },
-    { time: '16:15 - 17:15', event: 'Talk 3', chair: '', type: 'talk' },
-    { time: '17:15 - 17:30', event: 'Snacks & Tea', chair: '', type: 'break' },
-    { time: '17:30 - 18:30', event: 'Lightning Talks by Participants', chair: '', type: 'lightning' },
+    { time: '13:00 - 14:30', event: 'Lunch', chair: '', type: 'break' },
+    { time: '14:30 - 16:00', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+    { time: '16:00 - 16:15', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '16:15 - 17:30', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+    { time: '17:30 - 18:00', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '18:00 - 19:00', event: 'Group Discussion', chair: '', type: 'group-discussion' },
   ],
-  // Day 2
+  // Dec 10
   [
-    { time: '9:30 - 10:30', event: 'Talk 4', chair: '', type: 'talk' },
+    { time: '09:30 - 10:30', event: 'Talk 1', chair: '', type: 'talk' },
+    { time: '10:30 - 11:30', event: 'Talk 2', chair: '', type: 'talk' },
+    { time: '11:30 - 12:00', event: 'Snacks & Tea', chair: '', type: 'break' },
+    { time: '12:00 - 13:00', event: 'Talk 3', chair: '', type: 'talk' },
+    { time: '13:00 - 14:30', event: 'Lunch', chair: '', type: 'break' },
+    { time: '14:30 - 16:00', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+    { time: '16:00 - 16:15', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '16:15 - 17:30', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+    { time: '17:30 - 18:00', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '18:00 - 19:00', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+  ],
+  // Dec 11
+  [
+    { time: '09:30 - 10:30', event: 'Talk 4', chair: '', type: 'talk' },
     { time: '10:30 - 11:30', event: 'Talk 5', chair: '', type: 'talk' },
     { time: '11:30 - 12:00', event: 'Snacks & Tea', chair: '', type: 'break' },
     { time: '12:00 - 13:00', event: 'Talk 6', chair: '', type: 'talk' },
-    { time: '13:00 - 14:00', event: 'Lunch', chair: '', type: 'break' },
-    { time: '14:00 - 15:00', event: 'Talk 7', chair: '', type: 'talk' },
-    { time: '15:00 - 15:30', event: 'IBITF Session', chair: '', type: 'session' },
-    { time: '15:30 - 16:30', event: 'Poster Session', chair: '', type: 'poster' },
-    { time: '16:30 - 17:00', event: 'Snacks & Tea', chair: '', type: 'break' },
-    { time: '17:00 - 18:00', event: 'Talk 8', chair: '', type: 'talk' },
-  ],
-  // Day 3
-  [
-    { time: '9:30 - 10:30', event: 'Talk 9', chair: '', type: 'talk' },
-    { time: '10:30 - 11:30', event: 'Talk 10', chair: '', type: 'talk' },
-    { time: '11:30 - 11:50', event: 'Snack and Tea', chair: '', type: 'break' },
-    { time: '11:50 - 12:45', event: 'Panel Discussion', chair: '', type: 'panel' },
-    { time: '12:45 - 13:00', event: 'Valedictory Session', chair: '', type: 'ceremony' },
     { time: '13:00 - 14:30', event: 'Lunch', chair: '', type: 'break' },
+    { time: '14:30 - 16:00', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+    { time: '16:00 - 16:15', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '16:15 - 17:30', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+    { time: '17:30 - 18:00', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '18:00 - 19:00', event: 'Group Discussion', chair: '', type: 'group-discussion' },
+  ],
+  // Dec 12
+  [
+    { time: '09:30 - 10:30', event: 'Talk 7', chair: '', type: 'talk' },
+    { time: '10:30 - 11:30', event: 'Talk 8', chair: '', type: 'talk' },
+    { time: '11:30 - 12:00', event: 'Snacks & Tea', chair: '', type: 'break' },
+    { time: '12:00 - 13:00', event: 'Talk 9', chair: '', type: 'talk' },
+    { time: '13:00 - 14:30', event: 'Lunch', chair: '', type: 'break' },
+    { time: '14:30 - 16:00', event: 'Group Presentation', chair: '', type: 'group-presentation' },
+    { time: '16:00 - 16:15', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '16:15 - 17:30', event: 'Group Presentation', chair: '', type: 'group-presentation' },
+    { time: '17:30 - 18:00', event: 'Tea Break', chair: '', type: 'break' },
+    { time: '18:00 - 19:00', event: 'Group Presentation', chair: '', type: 'group-presentation' },
   ],
 ];
 
@@ -53,6 +64,8 @@ const getTypeIcon = (type) => {
     session: 'bg-indigo-500',
     poster: 'bg-pink-500',
     panel: 'bg-teal-500',
+    'group-discussion': 'bg-lime-500',
+    'group-presentation': 'bg-fuchsia-500',
     default: 'bg-gray-400',
   };
   const color = colorMap[type] || colorMap.default;
@@ -77,7 +90,7 @@ export default function Program() {
         <div className="max-w-5xl mx-auto">
           <GlowingBox className="mt-8 mb-16 p-4 sm:p-6 md:p-8 shadow-lg" data-aos="fade-up">
             <div className="flex justify-center border-b border-white/30 mb-4">
-              {['Day 1', 'Day 2', 'Day 3'].map((day, index) => (
+              {['Dec 09', 'Dec 10', 'Dec 11', 'Dec 12'].map((day, index) => (
                 <button
                   key={day}
                   onClick={() => setActiveDay(index)}

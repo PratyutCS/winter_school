@@ -24,7 +24,7 @@ export default function CodeOfConduct() {
               {/* Introduction */}
               <div>
                 <p className="text-lg leading-relaxed">
-                  The National Workshop on Cryptology 2025 is dedicated to providing a harassment-free,
+                  The Crypto Winter School 2025 is dedicated to providing a harassment-free,
                   inclusive, and professional environment for all participants regardless of gender, gender identity
                   and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity,
                   religion, or technology choices.
@@ -128,7 +128,7 @@ export default function CodeOfConduct() {
                   <li className="list-disc">Warning the offender</li>
                   <li className="list-disc">Expulsion from the workshop without refund</li>
                   <li className="list-disc">Reporting to appropriate authorities if necessary</li>
-                  <li className="list-disc">Banning from future events organized by IIT Bhilai or CRSI</li>
+                  <li className="list-disc">Banning from future CWS events</li>
                 </ul>
               </div>
 
@@ -141,7 +141,7 @@ export default function CodeOfConduct() {
                 </p>
                 <div className="space-y-2 text-[#2e2a30]/90">
                   <p className="font-semibold">Workshop Organizers:</p>
-                  <p>Email: </p>
+                  <p>Email: dhiman@iitbhilai.ac.in</p>
                   <p>Phone: </p>
                 </div>
               </div>

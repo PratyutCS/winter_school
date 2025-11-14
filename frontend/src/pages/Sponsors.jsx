@@ -48,7 +48,7 @@ export default function Sponsors() {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <GlowingBox className="w-64 h-64 p-0 flex justify-center items-center shadow-glow-medium hover:shadow-glow-strong bg-white rounded-full overflow-hidden transition-all duration-300 hover:scale-110">
+                  <GlowingBox className="w-64 h-64 p-0 flex justify-center items-center shadow-glow-medium hover:shadow-glow-strong !bg-white !backdrop-blur-none rounded-full overflow-hidden transition-all duration-300 hover:scale-110">
                     <img
                       src={sponsor.logo}
                       alt={sponsor.name}

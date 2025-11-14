@@ -20,7 +20,7 @@ export default function Header() {
           {/* Left: Logo + Title Section */}
           <div className="flex items-center space-x-3 sm:space-x-6">
             <a
-              href="https://www.samgnya.com/"
+              href="https://www.samgnya.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="group shrink-0"
@@ -42,7 +42,7 @@ export default function Header() {
               </div>
             </a>
             <a
-              href="https://www.nqm.gov.in/"
+              href="https://dst.gov.in/national-quantum-mission-nqm"
               target="_blank"
               rel="noopener noreferrer"
               className="group shrink-0"
@@ -127,7 +127,7 @@ export default function Header() {
 
               {/* IIT Bhilai Logo */}
               <a
-                href="https://www.iitbhilai.ac.in/"
+                href="https://www.iitbhilai.ac.in/index.php?pid=dept_cse"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center space-x-2 px-2 sm:px-4 py-1.5

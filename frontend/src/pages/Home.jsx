@@ -122,7 +122,7 @@ const Home = () => {
                 The Crypto Winter School (CWS 2025) aims to cultivate advanced research capabilities in cryptology, both from classical and post-quantum perspectives, among India's budding researchers. With the rapid evolution of quantum technologies posing significant threats to classical cryptographic primitives, it is imperative to equip researchers with the knowledge and skills necessary to design, analyse, and implement secure systems in the post-quantum era. The proposed Winter School directly aligns with the Human Resource Development (HRD) objectives of the National Quantum Mission (NQM) by strengthening national capacity in quantum-safe cryptography, building a pipeline of skilled researchers, fostering interdisciplinary collaboration, and increasing the impact and reach of the school by following a Dagstuhl-Seminar type format.
               </p>
               <p>
-                By providing hands-on exposure to real-world research under the guidance of eminent experts, CWS 2025 will create a fertile environment for innovation and sustainable research collaborations.
+                Through the group discussion sessions, students get an opportunity to have intensive collaborative discussions with eminent experts in the field, giving them hands-on exposure to real-world research. Thus, CWS 2025 will create a fertile environment for innovation and sustainable research collaborations.
               </p>
             </div>
           </GlowingBox>

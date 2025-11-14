@@ -8,7 +8,7 @@ import dstLogo from '../../assets/sponsors/dst.png';
 import iitBhilaiLogo from '../../assets/sponsors/iitbhilai.png';
 import samgnyaLogo from '../../assets/sponsors/samgnya.jpeg';
 import nqmLogo from '../../assets/sponsors/nqm.png';
-import placeholderLogo from '../../assets/logo.png';
+import placeholderLogo from '../../assets/sponsors/crsi.png';
 
 export default function Sponsors() {
   useEffect(() => {
@@ -36,23 +36,28 @@ export default function Sponsors() {
         <div className="max-w-4xl mx-auto mt-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
             {sponsors.map((sponsor, index) => (
-              <a
+              <div
                 key={index}
-                href={sponsor.link}
-                target="_blank"
-                rel="noopener noreferrer"
                 data-aos="fade-up"
                 data-aos-delay={100 + index * 100}
-                className="block transition-all duration-300 scale-105"
+                className="flex flex-col items-center transition-all duration-300 hover:scale-110"
               >
-                <GlowingBox className="w-64 h-64 p-0 flex justify-center items-center shadow-glow-strong bg-white rounded-full overflow-hidden">
-                  <img
-                    src={sponsor.logo}
-                    alt={sponsor.name}
-                    className="h-full w-full object-contain"
-                  />
-                </GlowingBox>
-              </a>
+                <a
+                  href={sponsor.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <GlowingBox className="w-64 h-64 p-0 flex justify-center items-center shadow-glow-medium hover:shadow-glow-strong bg-white rounded-full overflow-hidden transition-all duration-300 hover:scale-110">
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="h-full w-full object-contain"
+                    />
+                  </GlowingBox>
+                </a>
+                <div className="text-center mt-4 text-lg font-semibold text-black" style={{ textShadow: '0 0 8px rgba(128, 0, 128, 0.7)' }}>{sponsor.name}</div>
+              </div>
             ))}
           </div>
         </div>

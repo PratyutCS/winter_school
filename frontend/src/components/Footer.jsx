@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-white/20 backdrop-blur-xl glowing-border-light">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold mb-2 text-[#2e2a30]">National Workshop on Cryptology</h2>
+          <h2 className="text-3xl font-bold mb-2 text-[#2e2a30]">Crypto Winter School 2025</h2>
           <p className="text-lg text-[#2e2a30]/70">
             A premier event dedicated to advancing the fields of cryptography and information security.
           </p>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8 text-center">
           <p className="text-sm text-[#2e2a30]/70">
-            © 2025 National Workshop on Cryptology ·
+            © 2025 Crypto Winter School ·
             <a
               href="https://www.iitbhilai.ac.in"
               target="_blank"

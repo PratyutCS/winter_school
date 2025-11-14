@@ -14,8 +14,8 @@ import sabyasachiImg from "../../assets/speakers/sabyacachi.jpg";
 import avijitImg from "../../assets/speakers/avijit.jpg";
 import avikImg from "../../assets/speakers/avik.jpg";
 import mridulImg from "../../assets/speakers/mridul_nandi.jpg";
-import souradyutiImg from "../../assets/logo.png";
-import dhimanImg from "../../assets/logo.png";
+import souradyutiImg from "../../assets/speakers/souradyuti.jpg";
+import dhimanImg from "../../assets/speakers/dhiman.png";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -113,7 +113,7 @@ const Home = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8">
-            About the Workshop
+            About the Winter School
           </h2>
           
           <GlowingBox className="p-5 sm:p-8">
@@ -230,7 +230,7 @@ const Home = () => {
             className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
                        group-hover:text-[#7c3aed] transition-colors duration-300"
           >
-            Workshop Dates
+            Winter School Dates
           </h3>
           <p className="text-sm text-[#2e2a30]/70">December 09–12, 2025</p>
         </GlowingBox>

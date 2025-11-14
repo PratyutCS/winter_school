@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import GlowingBox from '../../components/GlowingBox';
 import { Plane, Train, Car } from 'lucide-react'; // Added imports
 
@@ -26,6 +27,13 @@ export default function Venue(){
                 <div><strong>By Road:</strong> The campus is well-connected by road from both Durg and Raipur. Regular taxi and bus services are readily available for a convenient commute.</div>
               </li>
             </ul>
+            <div className="text-center mt-8">
+                <Link to="/travel">
+                    <button className="bg-black text-white font-bold py-2 px-4 rounded-full shadow-[0_0_15px_rgba(124,58,237,0.5)] hover:shadow-[0_0_25px_rgba(124,58,237,0.8)] hover:scale-105 transition-all duration-300">
+                        Explore Nearby Sites
+                    </button>
+                </Link>
+            </div>
           </GlowingBox>
 
           <GlowingBox className="mt-8 overflow-hidden">

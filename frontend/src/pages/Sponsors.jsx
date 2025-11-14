@@ -6,6 +6,8 @@ import GlowingBox from '../components/GlowingBox';
 // Sponsor images
 import dstLogo from '../../assets/sponsors/dst.png';
 import iitBhilaiLogo from '../../assets/sponsors/iitbhilai.png';
+import samgnyaLogo from '../../assets/sponsors/samgnya.jpeg';
+import nqmLogo from '../../assets/sponsors/nqm.png';
 import placeholderLogo from '../../assets/logo.png';
 
 export default function Sponsors() {
@@ -22,9 +24,10 @@ export default function Sponsors() {
   ];
 
   const sponsors = [
-    { name: 'IITM CDOT Samgnya Technologies Foundation', logo: placeholderLogo, link: 'https://samgnya.in/' },
-    { name: 'DST (Department of Science and Technology)', logo: dstLogo, link: '#' },
+    { name: 'IITM CDOT Samgnya Technologies Foundation', logo: samgnyaLogo, link: 'https://samgnya.in/' },
+    { name: 'DST (Department of Science and Technology)', logo: dstLogo, link: 'https://dst.gov.in/' },
     { name: 'CRSI (Cryptology Research Society of India)', logo: placeholderLogo, link: 'https://crsind.in' },
+    { name: 'National Quantum Mission', logo: nqmLogo, link: 'https://dst.gov.in/national-quantum-mission-nqm' },
   ];
 
   return (

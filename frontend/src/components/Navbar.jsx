@@ -11,7 +11,6 @@ export default function Navbar() {
     { label: 'Registration', path: '/registration' },
     { label: 'Venue', path: '/travel/venue' },
     { label: 'Sponsors', path: '/sponsors' },
-    { label: 'Nearby Wonders', path: '/travel' },
   ];
 
   return (

@@ -29,7 +29,7 @@ export default function RegistrationHome() {
               </h2>
 
               <p className="text-lg text-[#2e2a30]/80 leading-relaxed text-justify">
-                We are pleased to announce that applications for the Crypto Winter School (CWS 2025) are now open. We invite all interested students, researchers, and professionals in the field of cryptology and information security to apply for this premier educational event.
+                We are pleased to announce that applications for the Crypto Winter School (CWS 2025) are now open. We invite all interested students, researchers, and professionals in the field of cryptology and information security to apply for this premier educational event. <span className="bg-yellow-200 font-bold">This event is invite only.</span>
               </p>
 
               <div>
@@ -57,15 +57,6 @@ export default function RegistrationHome() {
                 </p>
               </div>
 
-              <div className="text-center pt-4">
-                <div
-                  className="inline-block px-12 py-4 rounded-full font-bold text-lg text-white
-                                   shadow-xl"
-                  style={{ backgroundColor: '#2e2a30' }}
-                >
-                  Application form will be available soon
-                </div>
-              </div>
             </div>
           </GlowingBox>
 

@@ -25,15 +25,15 @@ export default function RegistrationHome() {
           >
             <div className="space-y-8">
               <h2 className="text-3xl font-bold text-[#2e2a30] text-center">
-                Apply for CWS 2025
+                Invite-Only
               </h2>
 
               <p className="text-lg text-[#2e2a30]/80 leading-relaxed text-justify">
-                We are pleased to announce that applications for the Crypto Winter School (CWS 2025) are now open. We invite all interested students, researchers, and professionals in the field of cryptology and information security to apply for this premier educational event. <span className="bg-yellow-200 font-bold">This event is invite only.</span>
+                Crypto Winter School 2025 will be an invite-only event. Only participants who receive an invitation through email shall be allowed to register for the event.
               </p>
 
               <div>
-                <h3 className="text-2xl font-bold text-[#2e2a30] mb-4">Application Benefits</h3>
+                <h3 className="text-2xl font-bold text-[#2e2a30] mb-4">Participation Benefits</h3>
                 <ul className="space-y-4 text-[#2e2a30]/80">
                   <li className="flex items-start">
                     <svg className="w-6 h-6 text-[#7c3aed] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h10a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" /></svg>
@@ -49,14 +49,6 @@ export default function RegistrationHome() {
                   </li>
                 </ul>
               </div>
-
-              <div className="bg-white/20 rounded-2xl p-6 border-l-4 border-amber-500">
-                <h3 className="text-xl font-bold text-[#2e2a30] mb-2">Important Note</h3>
-                <p className="text-[#2e2a30]/80 leading-relaxed text-justify">
-                  Please be advised that seats for the winter school are limited. Submission of the application form does not guarantee participation. All applications will undergo a selection process, and confirmed participants will be notified via email. We encourage you to apply early to secure your consideration.
-                </p>
-              </div>
-
             </div>
           </GlowingBox>
 

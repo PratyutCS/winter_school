@@ -141,8 +141,8 @@ export default function CodeOfConduct() {
                 </p>
                 <div className="space-y-2 text-[#2e2a30]/90">
                   <p className="font-semibold">Workshop Organizers:</p>
-                  <p>Email: dhiman@iitbhilai.ac.in</p>
-                  <p>Phone: </p>
+                  <p>Email: decipheredlab@iitbhilai.ac.in</p>
+                  <p>Phone: +91 9407900259</p>
                 </div>
               </div>
 

@@ -56,7 +56,7 @@ export default function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/cws">
       <ScrollToTop />
       <div className="min-h-screen flex flex-col relative overflow-hidden">
         <div ref={headerRef}>

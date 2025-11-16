@@ -121,7 +121,7 @@ export default function Header() {
                 <span className="text-[10px] sm:text-xs lg:text-sm
                                font-medium text-[#2e2a30] opacity-80
                                group-hover:opacity-100">
-                  Deciphered
+                  de.ci.phe.red
                 </span>
               </a>
 

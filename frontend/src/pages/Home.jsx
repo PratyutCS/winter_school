@@ -31,13 +31,13 @@ const Home = () => {
   }, []);
 
   const speakers = [
-    { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
-    { name: "Dr. Souradyuti Paul", expertise: "Cryptographic Protocols", university: "IIT Bhilai", image: souradyutiImg },
+    // { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
+    // { name: "Dr. Souradyuti Paul", expertise: "Cryptographic Protocols", university: "IIT Bhilai", image: souradyutiImg },
     { name: "Dr. Angshuman Karmakar", expertise: "Post Quantum Cryptography", university: "IIT Kanpur", image: angshumanImg },
     { name: "Dr. Avik Chakraborti", expertise: "White Box Cryptography", university: "TCG Crest", image: avikImg },
     { name: "Dr. Satrajit Ghosh", expertise: "Multi-Party Computation", university: "IIT Kharagpur", image: satrajitImg },
     { name: "Dr. Sabyasachi Karati", expertise: "Public Key Cryptography", university: "ISI Kolkata", image: sabyasachiImg },
-    { name: "Dr. Dhiman Saha", expertise: "Symmetric Key Cryptanalysis", university: "IIT Bhilai", image: dhimanImg },
+    // { name: "Dr. Dhiman Saha", expertise: "Symmetric Key Cryptanalysis", university: "IIT Bhilai", image: dhimanImg },
     { name: "Dr. Avijit Dutta", expertise: "Provable Security", university: "TCG Crest", image: avijitImg },
     { name: "Dr. Mostafizar Rahman", expertise: "Symmetric Key Cryptanalysis", university: "NTU Singapore", image: mostafizarImg },
     { name: "Dr. Shibam Ghosh", expertise: "Symmetric Key Cryptanalysis", university: "INRIA", image: shimanImg },

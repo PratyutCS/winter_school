@@ -1,0 +1,115 @@
+.floating-button-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 50;
+  }
+  
+  .floating-button {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: rgba(124, 58, 237, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(124, 58, 237, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 0 25px 5px rgba(124, 58, 237, 0.6); /* Stronger light aura */
+  }
+  
+  .floating-button:hover {
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 50px 10px rgba(124, 58, 237, 1); /* Even stronger aura */
+  }
+  
+  .floating-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(124, 58, 237, 0.8);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+  }
+  
+  .floating-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .floating-button .arrow {
+    color: white;
+    font-size: 3.5rem; /* Increased font size */
+    font-weight: 600; /* Made it bolder */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Added text shadow */
+    transform: translate(-5px, -5px) rotate(-45deg);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .floating-button:hover .arrow {
+    transform: rotate(0);
+  }
+  
+  .circular-text-hover, .circular-text-static {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: spin 20s linear infinite;
+    transition: opacity 0.4s ease-in-out 0.2s;
+  }
+  
+  .circular-text-hover {
+    opacity: 0;
+  }
+  
+  .circular-text-static {
+    opacity: 1;
+  }
+  
+  .floating-button:hover .circular-text-hover {
+    opacity: 1;
+  }
+  
+  .floating-button:hover .circular-text-static {
+    opacity: 0;
+  }
+  
+  .circular-text-hover svg, .circular-text-static svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circular-text-hover text {
+    font-size: 11.25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    fill: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+  
+  .circular-text-static text {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    fill: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+  
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

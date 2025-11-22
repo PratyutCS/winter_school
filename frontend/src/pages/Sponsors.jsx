@@ -5,7 +5,7 @@ import GlowingBox from '../components/GlowingBox';
 
 // Sponsor images
 import dstLogo from '../../assets/sponsors/dst.png';
-import iitBhilaiLogo from '../../assets/sponsors/iitbhilai.png';
+import iitBhilaiLogo from '../../assets/sponsors/IIT_B.svg';
 import samgnyaLogo from '../../assets/sponsors/samgnya.jpeg';
 import nqmLogo from '../../assets/sponsors/nqm.png';
 import placeholderLogo from '../../assets/sponsors/crsi.png';

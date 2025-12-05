@@ -23,6 +23,7 @@ export default function OrganisingCommittee() {
     'Madhurima Das',
     'Prathamesh Ram',
     'Pratyut',
+    'Rohan Madhukar Wasnik',
     'Soumen Jana',
     'Tilesh Srivastav',
     'Vipin Kumar',
@@ -55,7 +56,7 @@ export default function OrganisingCommittee() {
           </GlowingBox>
 
           <GlowingBox className="mt-8 p-4 sm:p-6 md:p-8" data-aos="fade-up">
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">Members of Organising Committee</h2>
+            <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">Members of Student Organising Committee</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {labMembers.map((member, index) => (
                 <div key={index} className="text-center p-4 border rounded-lg shadow-md bg-gray-50">

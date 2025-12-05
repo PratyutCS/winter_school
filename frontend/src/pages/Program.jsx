@@ -3,56 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GlowingBox from '../components/GlowingBox';
 
-const schedule = [
-  // Dec 09
-  [
-    { time: '09:30 - 14:00', event: 'National Workshop on Cryptology 2025', chair: '', type: 'nwc' },
-    { time: '14:00 - 15:00', event: 'Lunch', chair: '', type: 'lunch' },
-    { time: '15:00 - 15:30', event: 'Inauguration', chair: '', type: 'misc' },
-    { time: '15:30 - 17:00', event: 'Group Formation and Introduction', chair: '', type: 'misc' },
-    { time: '17:00 - 17:30', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '17:30 - 18:30', event: 'Group Discussion', chair: '', type: 'groupd' },
-  ],
-  // Dec 10
-  [
-    { time: '09:30 - 10:30', event: 'Talk 1', chair: '', type: 'talk' },
-    { time: '10:30 - 11:30', event: 'Talk 2', chair: '', type: 'talk' },
-    { time: '11:30 - 12:00', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '12:00 - 13:00', event: 'Talk 3', chair: '', type: 'talk' },
-    { time: '13:00 - 14:30', event: 'Lunch', chair: '', type: 'lunch' },
-    { time: '14:30 - 15:45', event: 'Group Discussion', chair: '', type: 'groupd' },
-    { time: '15:45 - 16:00', event: 'Tea Break', chair: '', type: 'snacks' },
-    { time: '16:00 - 17:00', event: 'Group Discussion', chair: '', type: 'groupd' },
-    { time: '17:00 - 17:30', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '17:30 - 18:30', event: 'Group Discussion', chair: '', type: 'groupd' },
-  ],
-  // Dec 11
-  [
-    { time: '09:30 - 10:30', event: 'Talk 4', chair: '', type: 'talk' },
-    { time: '10:30 - 11:30', event: 'Talk 5', chair: '', type: 'talk' },
-    { time: '11:30 - 12:00', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '12:00 - 13:30', event: 'Student Presentations', chair: '', type: 'misc' },
-    { time: '13:30 - 14:30', event: 'Lunch', chair: '', type: 'lunch' },
-    { time: '14:30 - 15:45', event: 'Group Discussion', chair: '', type: 'groupd' },
-    { time: '15:45 - 16:00', event: 'Tea Break', chair: '', type: 'snacks' },
-    { time: '16:00 - 17:00', event: 'Group Discussion', chair: '', type: 'groupd' },
-    { time: '17:00 - 17:30', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '17:30 - 18:30', event: 'Group Discussion', chair: '', type: 'groupd' },
-  ],
-  // Dec 12
-  [
-    { time: '09:30 - 10:30', event: 'Talk 6', chair: '', type: 'talk' },
-    { time: '10:30 - 11:30', event: 'Talk 7', chair: '', type: 'talk' },
-    { time: '11:30 - 12:00', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '12:00 - 13:00', event: 'Talk 8', chair: '', type: 'talk' },
-    { time: '13:00 - 14:30', event: 'Lunch', chair: '', type: 'lunch' },
-    { time: '14:30 - 15:45', event: 'Group Discussion', chair: '', type: 'groupd' },
-    { time: '15:45 - 16:00', event: 'Tea Break', chair: '', type: 'snacks' },
-    { time: '16:00 - 17:00', event: 'Group Presentation', chair: '', type: 'groupp' },
-    { time: '17:00 - 17:30', event: 'Snacks & Tea Break', chair: '', type: 'snacks' },
-    { time: '17:30 - 18:30', event: 'Group Presentation', chair: '', type: 'groupp' },
-  ],
-];
+import { schedule } from '../data/programSchedule';
 
 const getTypeIcon = (type) => {
   const colorMap = {
@@ -93,9 +44,9 @@ export default function Program() {
                   onClick={() => setActiveDay(index)}
                   className={`px-4 sm:px-6 py-3 text-sm sm:text-base font-medium transition-all duration-300
                               ${activeDay === index
-                                ? 'text-[#2e2a30] border-b-2 border-[#7c3aed]'
-                                : 'text-[#2e2a30]/60 hover:text-[#2e2a30]'
-                              }`}
+                      ? 'text-[#2e2a30] border-b-2 border-[#7c3aed]'
+                      : 'text-[#2e2a30]/60 hover:text-[#2e2a30]'
+                    }`}
                 >
                   {day}
                 </button>
@@ -104,11 +55,11 @@ export default function Program() {
 
             <div className="overflow-x-auto">
               <table className="w-full text-sm text-left text-[#2e2a30]">
-                              <thead className="text-xs text-[#2e2a30]/80 uppercase"><tr>
-                                  <th scope="col" className="px-4 py-3 md:w-1/4">Time</th>
-                                  <th scope="col" className="px-4 py-3 md:w-1/2">Event Name</th>
-                                  <th scope="col" className="px-4 py-3 md:w-1/4">Session Chair</th>
-                                </tr></thead>
+                <thead className="text-xs text-[#2e2a30]/80 uppercase"><tr>
+                  <th scope="col" className="px-4 py-3 md:w-1/4">Time</th>
+                  <th scope="col" className="px-4 py-3 md:w-1/2">Event Name</th>
+                  <th scope="col" className="px-4 py-3 md:w-1/4">Session Chair</th>
+                </tr></thead>
                 <tbody>
                   {schedule[activeDay].map((item, index) => (
                     <tr key={index} className="border-b border-white/40 hover:bg-white/10 transition-colors duration-200">

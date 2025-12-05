@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CountdownUnit from './CountdownUnit'; // Import the new component
 
-export default function Countdown({ targetDate }) {
+export default function Countdown({ targetDate, onComplete }) {
   const [left, setLeft] = useState({ days: 0, hrs: 0, mins: 0, secs: 0 });
 
   useEffect(() => {
@@ -10,6 +10,7 @@ export default function Countdown({ targetDate }) {
       if (diff <= 0) {
         clearInterval(t);
         setLeft({ days: 0, hrs: 0, mins: 0, secs: 0 });
+        if (onComplete) onComplete();
         return;
       }
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));

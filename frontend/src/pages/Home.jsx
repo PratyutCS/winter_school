@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Countdown from "../components/Countdown";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { getCurrentEvent } from "../data/programSchedule";
 
 // Speaker images
 import shimanImg from "../../assets/speakers/shiman.png";
@@ -20,6 +21,8 @@ import vi from "../../assets/speakers/vi_.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [isLive, setIsLive] = useState(false);
+  const [currentEvent, setCurrentEvent] = useState(null);
 
   useEffect(() => {
     AOS.init({
@@ -29,7 +32,31 @@ const Home = () => {
       offset: 100,
       disable: window.innerWidth < 768
     });
-  }, []);
+
+    // Check initially if we should be live
+    const event = getCurrentEvent();
+    if (event) {
+      setIsLive(true);
+      setCurrentEvent(event);
+    }
+
+    // Set up an interval to update the current event if we are live
+    let interval;
+    if (isLive) {
+      interval = setInterval(() => {
+        const event = getCurrentEvent();
+        setCurrentEvent(event);
+      }, 60000); // Check every minute
+    }
+
+    return () => clearInterval(interval);
+  }, [isLive]);
+
+  const handleCountdownComplete = () => {
+    setIsLive(true);
+    const event = getCurrentEvent();
+    setCurrentEvent(event);
+  };
 
   const speakers = [
     // { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
@@ -80,7 +107,46 @@ const Home = () => {
           </div>
 
           <div className="mt-6 sm:mt-8">
-            <Countdown targetDate="2025-12-09T15:00:00+05:30" />
+            {!isLive ? (
+              <Countdown
+                targetDate="2025-12-09T15:00:00+05:30"
+                onComplete={handleCountdownComplete}
+              />
+            ) : (
+              <div className="text-center animate-fade-in">
+                <div className="flex items-center justify-center gap-2 mb-4">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                  </span>
+                  <h2 className="text-xl font-bold text-[#7c3aed] uppercase tracking-wider">
+                    Program Updates
+                  </h2>
+                </div>
+
+                {currentEvent ? (
+                  <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 border border-[#7c3aed]/20">
+                    <div className="text-sm font-semibold text-[#7c3aed] mb-1">
+                      {currentEvent.day} • {currentEvent.time}
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-bold text-[#2e2a30] mb-2">
+                      {currentEvent.event}
+                    </h3>
+                    {currentEvent.chair && (
+                      <p className="text-sm text-[#2e2a30]/70">
+                        Session Chair: {currentEvent.chair}
+                      </p>
+                    )}
+                  </div>
+                ) : (
+                  <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 border border-[#7c3aed]/20">
+                    <p className="text-lg text-[#2e2a30]/80">
+                      No active session right now. Check the full program below.
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3">
@@ -110,14 +176,14 @@ const Home = () => {
 
       {/* About Section */}
       <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
-        <div 
+        <div
           data-aos="fade-up"
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8">
             About the Winter School
           </h2>
-          
+
           <GlowingBox className="p-5 sm:p-8">
             <div className="space-y-4 text-[#2e2a30]/90 text-sm sm:text-base leading-relaxed text-justify">
               <p className="first-letter:text-3xl first-letter:font-bold">
@@ -134,7 +200,7 @@ const Home = () => {
       {/* Speakers Section */}
       <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <h2 
+          <h2
             data-aos="fade-up"
             className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
           >
@@ -184,7 +250,7 @@ const Home = () => {
       {/* Focus Areas Section */}
       <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <h2 
+          <h2
             data-aos="fade-up"
             className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
           >
@@ -211,36 +277,36 @@ const Home = () => {
         </div>
       </section>
 
-                  {/* Important Dates Section */}
-                  <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
-  <div className="max-w-4xl mx-auto">
-    <h2
-      data-aos="fade-up"
-      className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
-    >
-      Important Dates
-    </h2>
-
-    <div className="grid sm:grid-cols-1 gap-3 sm:gap-4">
-      <div
-        data-aos="fade-up"
-        className="group cursor-pointer"
-        onClick={() => navigate('/program')}
-      >
-        <GlowingBox className="p-6 sm:p-8 transition-all duration-300 hover:scale-[1.02] max-w-md mx-auto text-center">
-          <h3
-            className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
-                       group-hover:text-[#7c3aed] transition-colors duration-300"
+      {/* Important Dates Section */}
+      <section className="w-full px-4 py-12 sm:py-16 overflow-hidden">
+        <div className="max-w-4xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
           >
-            Winter School Dates
-          </h3>
-          <p className="text-sm text-[#2e2a30]/70">December 09–12, 2025</p>
-        </GlowingBox>
-      </div>
-    </div>
-  </div>
-</section>
-    
+            Important Dates
+          </h2>
+
+          <div className="grid sm:grid-cols-1 gap-3 sm:gap-4">
+            <div
+              data-aos="fade-up"
+              className="group cursor-pointer"
+              onClick={() => navigate('/program')}
+            >
+              <GlowingBox className="p-6 sm:p-8 transition-all duration-300 hover:scale-[1.02] max-w-md mx-auto text-center">
+                <h3
+                  className="text-base sm:text-lg font-semibold text-[#2e2a30] mb-1
+                       group-hover:text-[#7c3aed] transition-colors duration-300"
+                >
+                  Winter School Dates
+                </h3>
+                <p className="text-sm text-[#2e2a30]/70">December 09–12, 2025</p>
+              </GlowingBox>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 };

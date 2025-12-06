@@ -56,9 +56,10 @@ export default function Program() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm text-left text-[#2e2a30]">
                 <thead className="text-xs text-[#2e2a30]/80 uppercase"><tr>
-                  <th scope="col" className="px-4 py-3 md:w-1/4">Time</th>
-                  <th scope="col" className="px-4 py-3 md:w-1/2">Event Name</th>
-                  <th scope="col" className="px-4 py-3 md:w-1/4">Session Chair</th>
+                  <th scope="col" className="px-4 py-3 md:w-1/5">Time</th>
+                  <th scope="col" className="px-4 py-3 md:w-2/5">Event Name</th>
+                  <th scope="col" className="px-4 py-3 md:w-1/5">Speaker</th>
+                  <th scope="col" className="px-4 py-3 md:w-1/5">Session Chair</th>
                 </tr></thead>
                 <tbody>
                   {schedule[activeDay].map((item, index) => (
@@ -67,9 +68,10 @@ export default function Program() {
                       <td className="px-4 py-4 font-semibold">
                         <div className="flex items-center">
                           {getTypeIcon(item.type)}
-                          <span>{item.event}</span>
+                          <span className={item.type === 'talk' ? 'italic' : ''}>{item.event}</span>
                         </div>
                       </td>
+                      <td className="px-4 py-4">{item.speaker}</td>
                       <td className="px-4 py-4">{item.chair}</td>
                     </tr>
                   ))}

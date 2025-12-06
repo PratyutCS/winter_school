@@ -132,6 +132,11 @@ const Home = () => {
                     <h3 className="text-lg sm:text-xl font-bold text-[#2e2a30] mb-2">
                       {currentEvent.event}
                     </h3>
+                    {currentEvent.speaker && (
+                      <p className="text-sm font-medium text-[#2e2a30]/80 mb-1">
+                        Speaker: {currentEvent.speaker}
+                      </p>
+                    )}
                     {currentEvent.chair && (
                       <p className="text-sm text-[#2e2a30]/70">
                         Session Chair: {currentEvent.chair}

@@ -12,6 +12,7 @@ import TravelHome from './pages/Travel/TravelHome';
 import Venue from './pages/Travel/Venue';
 import Sponsors from './pages/Sponsors';
 import GroupInformation from './pages/GroupInformation';
+import GroupDetail from './pages/GroupDetail';
 import OrganisingCommittee from './pages/OrganisingCommittee';
 import Photostream from './pages/Photostream';
 import ErrorPage from './pages/ErrorPage';
@@ -93,6 +94,7 @@ export default function App() {
             <Route path="/travel/venue" element={<Venue />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/group-information" element={<GroupInformation />} />
+            <Route path="/group-information/:groupId" element={<GroupDetail />} />
             <Route path="/organising-committee" element={<OrganisingCommittee />} />
             <Route path="/photostream" element={<Photostream />} />
             <Route path="*" element={<ErrorPage />} />

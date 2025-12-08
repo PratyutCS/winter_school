@@ -4,7 +4,7 @@ import Countdown from "../components/Countdown";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import { getCurrentEvent } from "../data/programSchedule";
+import { getCurrentEvent, isEventFinished } from "../data/programSchedule";
 
 // Speaker images
 import shimanImg from "../../assets/speakers/shiman.png";
@@ -18,11 +18,14 @@ import mridulImg from "../../assets/speakers/mridul_nandi.jpg";
 import souradyutiImg from "../../assets/speakers/souradyuti.jpg";
 import dhimanImg from "../../assets/speakers/dhiman.png";
 import vi from "../../assets/speakers/vi_.jpg";
+import prem from "../../assets/speakers/prem.png"; // New import
+import laltu from "../../assets/speakers/laltu.jpg"; // New import
 
 const Home = () => {
   const navigate = useNavigate();
   const [isLive, setIsLive] = useState(false);
   const [currentEvent, setCurrentEvent] = useState(null);
+  const [eventFinished, setEventFinished] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -32,6 +35,12 @@ const Home = () => {
       offset: 100,
       disable: window.innerWidth < 768
     });
+
+    // Check if event has finished
+    if (isEventFinished()) {
+      setEventFinished(true);
+      return;
+    }
 
     // Check initially if we should be live
     const event = getCurrentEvent();
@@ -44,6 +53,12 @@ const Home = () => {
     let interval;
     if (isLive) {
       interval = setInterval(() => {
+        // Also check if event has finished
+        if (isEventFinished()) {
+          setEventFinished(true);
+          setIsLive(false);
+          return;
+        }
         const event = getCurrentEvent();
         setCurrentEvent(event);
       }, 60000); // Check every minute
@@ -59,17 +74,15 @@ const Home = () => {
   };
 
   const speakers = [
-    // { name: "Prof. Mridul Nandi", expertise: "Provable Security", university: "ISI Kolkata", image: mridulImg },
-    // { name: "Dr. Souradyuti Paul", expertise: "Cryptographic Protocols", university: "IIT Bhilai", image: souradyutiImg },
-    { name: "Dr Angshuman Karmakar", expertise: "Post Quantum Cryptography", university: "IIT Kanpur", image: angshumanImg },
-    { name: "Dr Avik Chakraborti", expertise: "White Box Cryptography", university: "TCG Crest", image: avikImg },
-    { name: "Dr Satrajit Ghosh", expertise: "Multi-Party Computation", university: "IIT Kharagpur", image: satrajitImg },
-    { name: "Dr Sabyasachi Karati", expertise: "Public Key Cryptography", university: "ISI Kolkata", image: sabyasachiImg },
-    // { name: "Dr. Dhiman Saha", expertise: "Symmetric Key Cryptanalysis", university: "IIT Bhilai", image: dhimanImg },
-    // { name: "Dr. Avijit Dutta", expertise: "Provable Security", university: "TCG Crest", image: avijitImg },
-    { name: "Dr Srinivas Vivek", expertise: "Fully Homomorphic Encryption", university: "IIIT Bangalore", image: vi },
-    { name: "Dr Mostafizar Rahman", expertise: "Symmetric Key Cryptanalysis", university: "NTU Singapore", image: mostafizarImg },
-    { name: "Dr Shibam Ghosh", expertise: "Symmetric Key Cryptanalysis", university: "INRIA", image: shimanImg },
+    { name: "Dr. M. Prem Laxman Das", university: "SETS India", image: prem },
+    { name: "Dr Angshuman Karmakar", university: "IIT Kanpur", image: angshumanImg },
+    { name: "Dr Avik Chakraborti", university: "TCG Crest", image: avikImg },
+    { name: "Dr Laltu Sardar", university: "IISER Thiruvananthapuram", image: laltu },
+    { name: "Dr Satrajit Ghosh", university: "IIT Kharagpur", image: satrajitImg },
+    { name: "Dr Sabyasachi Karati", university: "ISI Kolkata", image: sabyasachiImg },
+    { name: "Dr Srinivas Vivek", university: "IIIT Bangalore", image: vi },
+    { name: "Dr Mostafizar Rahman", university: "NTU Singapore", image: mostafizarImg },
+    { name: "Dr Shibam Ghosh", university: "INRIA", image: shimanImg },
   ];
 
   const focusAreas = [
@@ -107,9 +120,26 @@ const Home = () => {
           </div>
 
           <div className="mt-6 sm:mt-8">
-            {!isLive ? (
+            {eventFinished ? (
+              <div className="text-center animate-fade-in">
+                <div className="bg-gradient-to-r from-[#7c3aed]/10 to-[#ec4899]/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-[#7c3aed]/20">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#7c3aed] mb-4">
+                    🎉 Event Concluded! 🎉
+                  </h2>
+                  <p className="text-base sm:text-lg text-[#2e2a30] mb-4">
+                    Thank you for being part of the Crypto Winter School 2025!
+                  </p>
+                  <div className="space-y-2 text-sm sm:text-base text-[#2e2a30]/80">
+                    <p>A heartfelt thanks to our <strong className="text-[#7c3aed]">distinguished speakers</strong> for sharing their expertise.</p>
+                    <p>Gratitude to all the <strong className="text-[#7c3aed]">participants</strong> for your enthusiasm and engagement.</p>
+                    <p>Special thanks to the <strong className="text-[#7c3aed]">group leaders</strong> for guiding the discussions.</p>
+                    <p>And immense appreciation to the <strong className="text-[#7c3aed]">organising committee</strong> for making this event a success!</p>
+                  </div>
+                </div>
+              </div>
+            ) : !isLive ? (
               <Countdown
-                targetDate="2025-12-09T15:00:00+05:30"
+                targetDate="2025-12-09T09:30:00+05:30"
                 onComplete={handleCountdownComplete}
               />
             ) : (
@@ -154,26 +184,26 @@ const Home = () => {
             )}
           </div>
 
-          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3">
-            <Link
-              to="/registration"
-              className="group relative px-6 py-2.5 rounded-xl bg-[#7c3aed] text-white 
-                       font-medium text-sm sm:text-base tracking-wide text-center
-                       transition-all duration-300 hover:shadow-[0_0_20px_rgba(124,58,237,0.5)]
-                       active:scale-95 overflow-hidden"
-            >
-              <span className="relative z-10">Register Now</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#7c3aed] to-[#ec4899] 
-                            opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
-            </Link>
+          <div className="mt-6 sm:mt-8 flex justify-center">
             <Link
               to="/program"
-              className="px-6 py-2.5 rounded-xl bg-white/80 text-[#2e2a30] font-medium
-                       text-sm sm:text-base tracking-wide text-center backdrop-blur-sm
-                       border border-[#7c3aed]/20 transition-all duration-300
-                       hover:border-[#7c3aed] hover:bg-white active:scale-95"
+              className="group relative px-10 sm:px-14 py-3 sm:py-4 rounded-xl 
+                       bg-gradient-to-r from-[#7c3aed] via-[#9333ea] to-[#ec4899]
+                       text-white font-semibold text-base sm:text-lg tracking-wide text-center
+                       transition-all duration-500 ease-out
+                       hover:scale-105 hover:shadow-[0_0_40px_rgba(124,58,237,0.6)]
+                       active:scale-95 overflow-hidden"
             >
-              View Program
+              <span className="relative z-10">View Program</span>
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full 
+                            transition-transform duration-1000 ease-out
+                            bg-gradient-to-r from-transparent via-white/30 to-transparent"/>
+              {/* Glow pulse on hover */}
+              <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 
+                            transition-opacity duration-500
+                            bg-gradient-to-r from-[#7c3aed] via-[#9333ea] to-[#ec4899]
+                            blur-xl -z-10 group-hover:animate-pulse"/>
             </Link>
           </div>
         </GlowingBox>
@@ -212,7 +242,7 @@ const Home = () => {
             Distinguished Speakers
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
             {speakers.map((speaker, index) => (
               <div
                 key={index}
@@ -238,9 +268,7 @@ const Home = () => {
                                  group-hover:text-[#7c3aed] transition-colors duration-500">
                       {speaker.name}
                     </h3>
-                    <p className="text-[10px] sm:text-xs font-medium text-[#7c3aed]/80">
-                      {speaker.expertise}
-                    </p>
+
                     <p className="text-[10px] sm:text-xs text-[#2e2a30]/60">
                       {speaker.university}
                     </p>

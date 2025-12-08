@@ -11,7 +11,7 @@ export const schedule = [
     // Dec 10
     [
         { time: '09:30 - 10:30', event: 'Multivariate Quadratic - Based Signatures', speaker: 'Dr. M Prem Laxman Das', chair: '', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'TBD', speaker: 'Dr. Laltu Sardar', chair: '', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'Mitigating Randao Manipulation: Can a VDF Be the Missing Link?', speaker: 'Dr. Laltu Sardar', chair: '', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Snacks & Tea Break', speaker: '', chair: '', type: 'snacks' },
         { time: '12:00 - 13:00', event: 'TBD', speaker: 'Dr. Mostafizar Rahman', chair: '', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
@@ -24,7 +24,7 @@ export const schedule = [
     // Dec 11
     [
         { time: '09:30 - 10:30', event: 'Differential Meet-In-The-Middle Attack on 14-round ARADI', speaker: 'Dr. Shibam Ghosh', chair: '', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'TBD', speaker: 'Dr. Satrajit Ghosh', chair: '', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'Fantastic PSI and where to find them', speaker: 'Dr. Satrajit Ghosh', chair: '', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Snacks & Tea Break', speaker: '', chair: '', type: 'snacks' },
         { time: '12:00 - 13:30', event: 'Student Presentations', speaker: '', chair: '', type: 'misc' },
         { time: '13:30 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
@@ -37,7 +37,7 @@ export const schedule = [
     // Dec 12
     [
         { time: '09:30 - 10:30', event: 'TBD', speaker: 'Dr. Sabyasachi Karati', chair: '', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'TBD', speaker: 'Dr. Srinivas Vivek', chair: '', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'Attack on a PUF-based Secure Binary Neural Network', speaker: 'Dr. Srinivas Vivek', chair: '', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Snacks & Tea Break', speaker: '', chair: '', type: 'snacks' },
         { time: '12:00 - 13:00', event: 'TBD', speaker: 'Dr. Avik Chakraborti', chair: '', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
@@ -48,6 +48,12 @@ export const schedule = [
         { time: '17:30 - 18:30', event: 'Group Presentation', speaker: '', chair: '', type: 'groupp' },
     ],
 ];
+
+export const isEventFinished = () => {
+    const now = new Date();
+    const eventEndDate = new Date('2025-12-12T18:30:00+05:30');
+    return now > eventEndDate;
+};
 
 export const getCurrentEvent = () => {
     const now = new Date();

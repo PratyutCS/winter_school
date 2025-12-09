@@ -39,7 +39,7 @@ export const schedule = [
         { time: '09:30 - 10:30', event: 'TBD', speaker: 'Dr. Sabyasachi Karati', chair: '', type: 'talk' },
         { time: '10:30 - 11:30', event: 'Attack on a PUF-based Secure Binary Neural Network', speaker: 'Dr. Srinivas Vivek', chair: '', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Snacks & Tea Break', speaker: '', chair: '', type: 'snacks' },
-        { time: '12:00 - 13:00', event: 'TBD', speaker: 'Dr. Avik Chakraborti', chair: '', type: 'talk' },
+        { time: '12:00 - 13:00', event: 'Security in the White-box Setting', speaker: 'Dr. Avik Chakraborti', chair: '', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
         { time: '14:30 - 15:45', event: 'Group Discussion', speaker: '', chair: '', type: 'groupd' },
         { time: '15:45 - 16:00', event: 'Tea Break', speaker: '', chair: '', type: 'snacks' },

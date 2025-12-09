@@ -23,33 +23,33 @@ import placeholderImg from "../../assets/logo.png";
 export const groups = [
     {
         id: 1,
-        roomNumber: "201",
+        roomNumber: "L201",
         name: "Cryptanalysis I",
         experts: [
-            { name: "Shibam Ghosh", initials: "SG", image: shibamImg },
-            { name: "Dhiman Saha", initials: "DS", image: dhimanImg }
+            { name: "Dr Shibam Ghosh", initials: "SG", image: shibamImg },
+            { name: "Dr Dhiman Saha", initials: "DS", image: dhimanImg }
         ],
-        members: ["Soumen Jana", "Prathamesh Ram", "Dilip Sau", "Ayush", "Mohit Pal", "Akshay Ankush Yadav"]
+        members: ["Dr Jamunarani D", "Dr Mohit Pal", "Akshay Ankush Yadav", "Ayush", "Dilip Sau", "Prathamesh Ram", "Soumen Jana"]
     },
     {
         id: 2,
-        roomNumber: "202",
+        roomNumber: "L202",
         name: "Cryptanalysis II",
         experts: [
-            { name: "Mostafizar Rahman", initials: "MR", image: mostafizarImg },
-            { name: "M Prem Laxman Das", initials: "PD", image: premImg }
+            { name: "Dr Mostafizar Rahman", initials: "MR", image: mostafizarImg },
+            { name: "Dr M Prem Laxman Das", initials: "PD", image: premImg }
         ],
-        members: ["Md Sariful Molla", "Niloy Das", "Anup Kundu", "Ajay Kumar Das", "Madhurima Das", "Manish Sahu", "Isha Goel"]
+        members: ["Anup Kumar Kundu", "Ajay Kumar Das", "Manish Sahu", "Md Sariful Molla", "Niloy Das", "Madhurima Das", "Isha Goel"]
     },
     {
         id: 3,
-        roomNumber: "203",
+        roomNumber: "L203",
         name: "Cryptanalysis III",
         experts: [
-            { name: "Sahiba Suryawanshi", initials: "SS", image: sahibaImg },
-            { name: "Goutam Kumar Paul", initials: "GP", image: paulImg }
+            { name: "Dr Sahiba Suryawanshi", initials: "SS", image: sahibaImg },
+            { name: "Dr Goutam Kumar Paul", initials: "GP", image: paulImg }
         ],
-        members: ["Ranit Dutta", "Sreedhar Karmakar", "Hrithik Nandi", "Jhelum Dhar", "Nitesh Singh Bhadouria", "Medini H R"]
+        members: ["Dr Medini H R", "Hrithik Nandi", "Sreedhar Karmakar", "Ranit Datta", "Jhelum Dhar", "Nitesh Singh Bhadouria"]
     },
     // {
     //     id: 4,
@@ -62,42 +62,42 @@ export const groups = [
     // },
     {
         id: 4,
-        roomNumber: "204",
+        roomNumber: "L204",
         name: "Multi-Party Computation",
         experts: [
-            { name: "Satrajit Ghosh", initials: "SG", image: satrajitImg }
+            { name: "Dr Satrajit Ghosh", initials: "SG", image: satrajitImg }
         ],
         members: ["Amlan Sinha", "Kiran Deep Ghosh", "Suchandan Ghosh", "Sougata Mandal", "Soumit Pal", "Subha Kar"]
     },
     {
         id: 5,
-        roomNumber: "205",
+        roomNumber: "L205",
         name: "PQ Digital Signatures",
         experts: [
-            { name: "R Kabaleeshwaran", initials: "RK", image: kableeshImg },
-            { name: "Sabyasachi Karati", initials: "SK", image: sabyasachiImg }
+            { name: "Dr R Kabaleeshwaran", initials: "RK", image: kableeshImg },
+            { name: "Dr Sabyasachi Karati", initials: "SK", image: sabyasachiImg }
         ],
-        members: ["Akshay Dhan", "Gagan Soni", "Divya Nagabhai Varu", "Nikita Dey", "Divyam Katiyar"]
+        members: ["Akshay Dhan", "Gagan Soni", "Divya Nagabhai Varu", "Nikita Dey", "Divyam Katiyar", "Venkatesh Kumar", "Sajjan Kumar"]
     },
     {
         id: 6,
-        roomNumber: "206",
+        roomNumber: "L206",
         name: "Searchable Encryption",
         experts: [
-            { name: "Laltu Sardar", initials: "LS", image: laltuImg },
-            { name: "Subhabrata Samajder", initials: "SS", image: subhabrataImg }
+            { name: "Dr Laltu Sardar", initials: "LS", image: laltuImg },
+            { name: "Dr Subhabrata Samajder", initials: "SS", image: subhabrataImg }
         ],
         members: ["Bibhas Chandra Das", "Palak Kumari", "Vipin Kumar", "Fedal Castro", "Shreya Dey"]
     },
     {
         id: 7,
-        roomNumber: "207",
+        roomNumber: "L207",
         name: "Security of TEEs",
         experts: [
-            { name: "Avik Chakraborti", initials: "AC", image: avikImg },
-            { name: "Srinivas Vivek", initials: "SV", image: vivekImg }
+            { name: "Dr Avik Chakraborti", initials: "AC", image: avikImg },
+            { name: "Dr Srinivas Vivek", initials: "SV", image: vivekImg }
         ],
-        members: ["Jitendra Kulaste", "Sandip Pal", "Ayantika Laha", "Sajani Kundu", "Md Alamgir Alam"]
+        members: ["Dr Ayantika Laha", "Jitendra Kulaste", "Sandip Pal", "Sajani Kundu", "Md Alamgir Alam", "Santosh Kumar Singh"]
     },
 ];
 

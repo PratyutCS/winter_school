@@ -23,6 +23,7 @@ import placeholderImg from "../../assets/logo.png";
 export const groups = [
     {
         id: 1,
+        roomNumber: "201",
         name: "Cryptanalysis I",
         experts: [
             { name: "Shibam Ghosh", initials: "SG", image: shibamImg },
@@ -32,6 +33,7 @@ export const groups = [
     },
     {
         id: 2,
+        roomNumber: "202",
         name: "Cryptanalysis II",
         experts: [
             { name: "Mostafizar Rahman", initials: "MR", image: mostafizarImg },
@@ -41,6 +43,7 @@ export const groups = [
     },
     {
         id: 3,
+        roomNumber: "203",
         name: "Cryptanalysis III",
         experts: [
             { name: "Sahiba Suryawanshi", initials: "SS", image: sahibaImg },
@@ -48,17 +51,18 @@ export const groups = [
         ],
         members: ["Ranit Dutta", "Sreedhar Karmakar", "Hrithik Nandi", "Jhelum Dhar", "Nitesh Singh Bhadouria", "Medini H R"]
     },
+    // {
+    //     id: 4,
+    //     name: "Cryptographic Hardware",
+    //     experts: [
+    //         { name: "Subidh Ali", initials: "SA", image: subidhImg },
+    //         { name: "Angshuman Karmakar", initials: "AK", image: angshumanImg }
+    //     ],
+    //     members: ["Jamunarani D", "Venkatesh Kumar", "Santosh Kumar Singh", "Sajjan Kumar"]
+    // },
     {
         id: 4,
-        name: "Cryptographic Hardware",
-        experts: [
-            { name: "Subidh Ali", initials: "SA", image: subidhImg },
-            { name: "Angshuman Karmakar", initials: "AK", image: angshumanImg }
-        ],
-        members: ["Jamunarani D", "Venkatesh Kumar", "Santosh Kumar Singh", "Sajjan Kumar"]
-    },
-    {
-        id: 5,
+        roomNumber: "204",
         name: "Multi-Party Computation",
         experts: [
             { name: "Satrajit Ghosh", initials: "SG", image: satrajitImg }
@@ -66,7 +70,8 @@ export const groups = [
         members: ["Amlan Sinha", "Kiran Deep Ghosh", "Suchandan Ghosh", "Sougata Mandal", "Soumit Pal", "Subha Kar"]
     },
     {
-        id: 6,
+        id: 5,
+        roomNumber: "205",
         name: "PQ Digital Signatures",
         experts: [
             { name: "R Kabaleeshwaran", initials: "RK", image: kableeshImg },
@@ -75,7 +80,8 @@ export const groups = [
         members: ["Akshay Dhan", "Gagan Soni", "Divya Nagabhai Varu", "Nikita Dey", "Divyam Katiyar"]
     },
     {
-        id: 7,
+        id: 6,
+        roomNumber: "206",
         name: "Searchable Encryption",
         experts: [
             { name: "Laltu Sardar", initials: "LS", image: laltuImg },
@@ -84,7 +90,8 @@ export const groups = [
         members: ["Bibhas Chandra Das", "Palak Kumari", "Vipin Kumar", "Fedal Castro", "Shreya Dey"]
     },
     {
-        id: 8,
+        id: 7,
+        roomNumber: "207",
         name: "Security of TEEs",
         experts: [
             { name: "Avik Chakraborti", initials: "AC", image: avikImg },

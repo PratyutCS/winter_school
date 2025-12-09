@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GlowingBox from '../components/GlowingBox';
 import { getGroupById } from '../data/groupsData';
-import { ArrowLeft, Award, Users } from 'lucide-react';
+import { ArrowLeft, Award, Users, MapPin } from 'lucide-react';
 
 const GroupDetail = () => {
     const { groupId } = useParams();
@@ -63,9 +63,15 @@ const GroupDetail = () => {
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#7c3aed]/40 via-[#ec4899]/40 to-[#7c3aed]/40" />
 
                         <div className="text-center flex flex-col items-center">
-                            <span className="inline-block py-1 px-4 rounded-full bg-[#7c3aed]/5 text-[#7c3aed] text-sm md:text-base font-bold tracking-widest uppercase mb-3 border border-[#7c3aed]/10">
-                                Group {group.id}
-                            </span>
+                            <div className="flex items-center gap-3 mb-3">
+                                <span className="inline-block py-1 px-4 rounded-full bg-[#7c3aed]/5 text-[#7c3aed] text-sm md:text-base font-bold tracking-widest uppercase border border-[#7c3aed]/10">
+                                    Group {group.id}
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 py-1 px-4 rounded-full bg-[#ec4899]/5 text-[#ec4899] text-sm md:text-base font-bold tracking-widest uppercase border border-[#ec4899]/10">
+                                    <MapPin className="w-4 h-4" />
+                                    Room {group.roomNumber}
+                                </span>
+                            </div>
                             <h1 className="text-3xl md:text-5xl font-bold text-[#2e2a30] tracking-tight leading-tight">
                                 {group.name}
                             </h1>

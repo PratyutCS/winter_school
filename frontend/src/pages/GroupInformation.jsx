@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GlowingBox from '../components/GlowingBox';
 import { groups } from '../data/groupsData';
-import { Users, ChevronRight } from 'lucide-react';
+import { Users, ChevronRight, MapPin } from 'lucide-react';
 
 const GroupInformation = () => {
   const navigate = useNavigate();
@@ -65,7 +65,12 @@ const GroupInformation = () => {
                     </h3>
 
                     {/* Stats */}
-                    <div className="mt-auto pt-6 border-t border-[#2e2a30]/5 flex items-center gap-4 text-sm font-medium text-[#2e2a30]/50 group-hover:text-[#2e2a30]/70 transition-colors">
+                    <div className="mt-auto pt-6 border-t border-[#2e2a30]/5 flex flex-wrap items-center gap-3 text-sm font-medium text-[#2e2a30]/50 group-hover:text-[#2e2a30]/70 transition-colors">
+                      <div className="flex items-center gap-1.5">
+                        <MapPin className="w-4 h-4" />
+                        <span>Room {group.roomNumber}</span>
+                      </div>
+                      <div className="w-1 h-1 rounded-full bg-[#2e2a30]/20" />
                       <div className="flex items-center gap-1.5">
                         <Users className="w-4 h-4" />
                         <span>{group.experts.length} Experts</span>

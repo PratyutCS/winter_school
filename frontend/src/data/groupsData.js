@@ -15,6 +15,7 @@ import sahibaImg from "../../assets/speakers/sahiba.jpeg";
 import paulImg from "../../assets/speakers/paul.png";
 import subidhImg from "../../assets/speakers/subidh_ali.jpg";
 import kableeshImg from "../../assets/speakers/r_kableesh.png";
+import subhabrataImg from "../../assets/speakers/subhabrata.jpg";
 
 // Placeholder
 import placeholderImg from "../../assets/logo.png";
@@ -27,7 +28,7 @@ export const groups = [
             { name: "Shibam Ghosh", initials: "SG", image: shibamImg },
             { name: "Dhiman Saha", initials: "DS", image: dhimanImg }
         ],
-        members: ["Soumen Jana", "Prathamesh Ram", "Dilip Sau", "Ayush", "Mohit", "Akshay Ankush Yadav"]
+        members: ["Soumen Jana", "Prathamesh Ram", "Dilip Sau", "Ayush", "Mohit Pal", "Akshay Ankush Yadav"]
     },
     {
         id: 2,
@@ -45,7 +46,7 @@ export const groups = [
             { name: "Sahiba Suryawanshi", initials: "SS", image: sahibaImg },
             { name: "Goutam Kumar Paul", initials: "GP", image: paulImg }
         ],
-        members: ["Ranit Dutta", "Sreedhar Karmakar", "Hrithik Nandi", "Jhelum Dhar", "Nitesh Singh Bhadouria", "Dr Medini H R"]
+        members: ["Ranit Dutta", "Sreedhar Karmakar", "Hrithik Nandi", "Jhelum Dhar", "Nitesh Singh Bhadouria", "Medini H R"]
     },
     {
         id: 4,
@@ -54,7 +55,7 @@ export const groups = [
             { name: "Subidh Ali", initials: "SA", image: subidhImg },
             { name: "Angshuman Karmakar", initials: "AK", image: angshumanImg }
         ],
-        members: ["Dr Jamunarani D", "Venkatesh Kumar", "Santosh Kumar Singh", "Sajjan Kumar"]
+        members: ["Jamunarani D", "Venkatesh Kumar", "Santosh Kumar Singh", "Sajjan Kumar"]
     },
     {
         id: 5,
@@ -69,7 +70,7 @@ export const groups = [
         name: "PQ Digital Signatures",
         experts: [
             { name: "R Kabaleeshwaran", initials: "RK", image: kableeshImg },
-            { name: "Sabhasachi Karati", initials: "SK", image: sabyasachiImg }
+            { name: "Sabyasachi Karati", initials: "SK", image: sabyasachiImg }
         ],
         members: ["Akshay Dhan", "Gagan Soni", "Divya Nagabhai Varu", "Nikita Dey", "Divyam Katiyar"]
     },
@@ -78,7 +79,7 @@ export const groups = [
         name: "Searchable Encryption",
         experts: [
             { name: "Laltu Sardar", initials: "LS", image: laltuImg },
-            { name: "Subhabrata Samajder", initials: "SS", image: placeholderImg }
+            { name: "Subhabrata Samajder", initials: "SS", image: subhabrataImg }
         ],
         members: ["Bibhas Chandra Das", "Palak Kumari", "Vipin Kumar", "Fedal Castro", "Shreya Dey"]
     },
@@ -89,7 +90,7 @@ export const groups = [
             { name: "Avik Chakraborti", initials: "AC", image: avikImg },
             { name: "Srinivas Vivek", initials: "SV", image: vivekImg }
         ],
-        members: ["Jitendra Kulaste", "Sandip Pal", "Dr Ayantika Laha", "Sajani Kundu", "Md Alamgir Alam"]
+        members: ["Jitendra Kulaste", "Sandip Pal", "Ayantika Laha", "Sajani Kundu", "Md Alamgir Alam"]
     },
 ];
 

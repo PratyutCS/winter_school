@@ -86,16 +86,12 @@ const Home = () => {
   ];
 
   const focusAreas = [
-    "Provable Security and Foundations of Cryptography",
-    "Design and Implementation of Cryptographic Algorithms",
-    "Symmetric-Key Cryptography and Cryptanalysis",
-    "Fault Attacks on Quantum Safe Cryptography",
-    "Post-Quantum Cryptography and Lattice-Based Constructions",
-    "Quantum Symmetric Cryptology",
-    "Privacy-Preserving Protocols",
-    "Public-Key Cryptography and Zero-Knowledge Proofs",
-    "Secure Multi-Party Computation and Homomorphic Encryption",
-    "Quantum-Secure Communication Protocols"
+    "Symmetric-Key Cryptanalysis",
+    "Cryptographic Hardware",
+    "Multi-Party Computation",
+    "Post-Quantum Digital Signatures",
+    "Searchable Encryption",
+    "Security of Trusted Execution Environments"
   ];
 
   return (
@@ -139,7 +135,7 @@ const Home = () => {
               </div>
             ) : !isLive ? (
               <Countdown
-                targetDate="2025-12-09T09:30:00+05:30"
+                targetDate="2025-12-09T14:30:00+05:30"
                 onComplete={handleCountdownComplete}
               />
             ) : (

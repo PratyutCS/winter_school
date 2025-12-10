@@ -26,7 +26,7 @@ echo "Zipping frontend/dist (if not already zipped)..."
 # zip -r frontend/dist/website.zip frontend/dist/*
 
 echo "Copying build to server..."
-scp frontend/dist/website.zip cws@events.iitbhilai.ac.in:~/
+scp ./frontend/dist/website.zip cws@events.iitbhilai.ac.in:~/
 
 echo "SSH into server..."
 ssh cws@events.iitbhilai.ac.in

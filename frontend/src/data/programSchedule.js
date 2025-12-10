@@ -10,10 +10,11 @@ export const schedule = [
     ],
     // Dec 10
     [
-        { time: '09:30 - 10:30', event: 'Multivariate Quadratic-Based Signatures', speaker: 'Dr M Prem Laxman Das', chair: '', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'Differential Meet-In-The-Middle Attack on 14-round ARADI', speaker: 'Dr Shibam Ghosh', chair: '', type: 'talk' },
+        { time: '09:30 - 10:30', event: 'Multivariate Quadratic-Based Signatures', speaker: 'Dr M Prem Laxman Das', chair: 'Prof Goutam Kumar Paul', type: 'talk' },
+//        { time: '10:30 - 11:30', event: 'Differential Meet-In-The-Middle Attack on 14-round ARADI', speaker: 'Dr Shibam Ghosh', chair: 'Prof Goutam Kumar Paul', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'Improved Key Recovery Attacks on ARADI', speaker: 'Dr Shibam Ghosh', chair: 'Prof Goutam Kumar Paul', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Morning Tea', speaker: '', chair: '', type: 'snacks' },
-        { time: '12:00 - 13:00', event: 'Fantastic PSI and where to find them', speaker: 'Dr Satrajit Ghosh', chair: '', type: 'talk' },
+        { time: '12:00 - 13:00', event: 'Fantastic PSI and where to find them', speaker: 'Dr Satrajit Ghosh', chair: 'Dr Mostafizar Rahman', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
         { time: '14:30 - 15:45', event: 'Group Discussion', speaker: '', chair: '', type: 'groupd' },
         { time: '15:45 - 16:00', event: 'Coffee Break', speaker: '', chair: '', type: 'snacks' },

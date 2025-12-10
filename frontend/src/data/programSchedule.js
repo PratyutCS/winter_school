@@ -14,7 +14,7 @@ export const schedule = [
 //        { time: '10:30 - 11:30', event: 'Differential Meet-In-The-Middle Attack on 14-round ARADI', speaker: 'Dr Shibam Ghosh', chair: 'Prof Goutam Kumar Paul', type: 'talk' },
         { time: '10:30 - 11:30', event: 'Improved Key Recovery Attacks on ARADI', speaker: 'Dr Shibam Ghosh', chair: 'Prof Goutam Kumar Paul', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Morning Tea', speaker: '', chair: '', type: 'snacks' },
-        { time: '12:00 - 13:00', event: 'Fantastic PSI and where to find them', speaker: 'Dr Satrajit Ghosh', chair: 'Dr Mostafizar Rahman', type: 'talk' },
+        { time: '12:00 - 13:00', event: 'Fantastic PSI and where to find them', speaker: 'Dr Satrajit Ghosh', chair: 'Prof Goutam Kumar Paul', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
         { time: '14:30 - 15:45', event: 'Group Discussion', speaker: '', chair: '', type: 'groupd' },
         { time: '15:45 - 16:00', event: 'Coffee Break', speaker: '', chair: '', type: 'snacks' },
@@ -24,8 +24,8 @@ export const schedule = [
     ],
     // Dec 11
     [
-        { time: '09:30 - 10:30', event: 'Mitigating Randao Manipulation: Can a VDF Be the Missing Link?', speaker: 'Dr Laltu Sardar', chair: '', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'TBA', speaker: 'Dr Mostafizar Rahman', chair: '', type: 'talk' },
+        { time: '09:30 - 10:30', event: 'Mitigating Randao Manipulation: Can a VDF Be the Missing Link?', speaker: 'Dr Laltu Sardar', chair: 'Dr Subhabrata Samajder', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'TBA', speaker: 'Dr Mostafizar Rahman', chair: 'Dr Subhabrata Samajder', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Morning Tea', speaker: '', chair: '', type: 'snacks' },
         { time: '12:00 - 13:30', event: 'Student Presentations', speaker: '', chair: '', type: 'misc' },
         { time: '13:30 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
@@ -37,10 +37,10 @@ export const schedule = [
     ],
     // Dec 12
     [
-        { time: '09:30 - 10:30', event: 'TBA', speaker: 'Dr Sabyasachi Karati', chair: '', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'Attack on a PUF-based Secure Binary Neural Network', speaker: 'Dr Srinivas Vivek', chair: '', type: 'talk' },
+        { time: '09:30 - 10:30', event: 'TBA', speaker: 'Dr Sabyasachi Karati', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'Attack on a PUF-based Secure Binary Neural Network', speaker: 'Dr Srinivas Vivek', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Morning Tea', speaker: '', chair: '', type: 'snacks' },
-        { time: '12:00 - 13:00', event: 'Security in the White-box Setting', speaker: 'Dr Avik Chakraborti', chair: '', type: 'talk' },
+        { time: '12:00 - 13:00', event: 'Security in the White-box Setting', speaker: 'Dr Avik Chakraborti', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
         { time: '14:30 - 15:45', event: 'Group Discussion', speaker: '', chair: '', type: 'groupd' },
         { time: '15:45 - 16:00', event: 'Coffee Break', speaker: '', chair: '', type: 'snacks' },

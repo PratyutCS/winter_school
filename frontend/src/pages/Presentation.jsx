@@ -29,8 +29,8 @@ const presenters = [
         title: "TBD",
     },
     {
-        name: "Shreya De",
-        title: "TBD",
+        name: "Shreya Dey",
+        title: "Beyond CLRW1^4: A Two-Key Cascading LRW1 Design",
     }
 ];
 

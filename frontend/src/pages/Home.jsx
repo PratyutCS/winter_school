@@ -80,7 +80,7 @@ const Home = () => {
   const speakers = [
     { name: "Prof. Goutam Kumar Paul", university: "ISI Kolkata", image: paulImg },
     { name: "Dr. M. Prem Laxman Das", university: "SETS India", image: prem },
-    { name: "Dr Angshuman Karmakar", university: "IIT Kanpur", image: angshumanImg },
+//    { name: "Dr Angshuman Karmakar", university: "IIT Kanpur", image: angshumanImg },
     { name: "Dr Avik Chakraborti", university: "TCG Crest", image: avikImg },
     { name: "Dr Laltu Sardar", university: "IISER Thiruvananthapuram", image: laltu },
     { name: "Dr Satrajit Ghosh", university: "IIT Kharagpur", image: satrajitImg },

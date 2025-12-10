@@ -48,22 +48,24 @@ export default function Presentation() {
         <div className="min-h-screen flex flex-col pt-[140px] bg-gradient-to-b from-transparent to-[#2e2a30]/5">
             <main className="flex-grow px-4 md:px-8 pb-12">
                 <div className="max-w-5xl mx-auto">
-                    <div data-aos="fade-up" className="text-center mb-12">
-                        <h1 className="text-4xl md:text-5xl font-bold text-[#2e2a30] mb-4 tracking-tight">
-                            Student Presentation Session
-                        </h1>
-                        <div className="h-1.5 w-32 bg-gradient-to-r from-[#7c3aed] via-[#ec4899] to-[#7c3aed] mx-auto rounded-full shadow-lg shadow-[#7c3aed]/20"></div>
-                    </div>
+                    <GlowingBox strongGlow={true} className="p-8 md:p-12 border-0 overflow-hidden bg-white/60 backdrop-blur-2xl" data-aos="fade-up">
 
-                    <GlowingBox strongGlow={true} className="p-0 border-0 overflow-hidden bg-white/60 backdrop-blur-2xl" data-aos="fade-up" data-aos-delay="100">
+                        {/* Header inside the box */}
+                        <div className="text-center mb-12">
+                            <h1 className="text-3xl md:text-5xl font-bold text-[#2e2a30] mb-6 tracking-tight">
+                                Student Presentation Session
+                            </h1>
+                            <div className="h-1.5 w-32 bg-gradient-to-r from-[#7c3aed] via-[#ec4899] to-[#7c3aed] mx-auto rounded-full shadow-lg shadow-[#7c3aed]/20"></div>
+                        </div>
+
                         {/* Table Header for Desktop */}
-                        <div className="hidden md:grid grid-cols-12 gap-4 px-8 py-5 border-b border-[#2e2a30]/10 bg-[#7c3aed]/5">
+                        <div className="hidden md:grid grid-cols-12 gap-4 px-8 py-5 border-b border-[#2e2a30]/10 bg-[#7c3aed]/5 rounded-t-xl">
                             <div className="col-span-1 font-bold text-[#7c3aed] uppercase tracking-wider text-sm text-center">#</div>
                             <div className="col-span-4 font-bold text-[#2e2a30]/70 uppercase tracking-wider text-sm">Speaker</div>
                             <div className="col-span-7 font-bold text-[#2e2a30]/70 uppercase tracking-wider text-sm">Title</div>
                         </div>
 
-                        <div className="divide-y divide-[#7c3aed]/10">
+                        <div className="divide-y divide-[#7c3aed]/10 border-x border-b border-[#2e2a30]/5 rounded-b-xl bg-white/40">
                             {presenters.map((presenter, index) => (
                                 <div
                                     key={index}

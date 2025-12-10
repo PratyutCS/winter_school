@@ -11,7 +11,7 @@ echo "Pushing to remote..."
 git push
 
 echo "Running local script..."
-./script_0.sh
+./0_script.sh
 
 echo "Zipping frontend/dist (if not already zipped)..."
 # Uncomment the next line if you need to zip it here:

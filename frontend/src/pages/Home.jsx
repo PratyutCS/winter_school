@@ -18,8 +18,12 @@ import mridulImg from "../../assets/speakers/mridul_nandi.jpg";
 import souradyutiImg from "../../assets/speakers/souradyuti.jpg";
 import dhimanImg from "../../assets/speakers/dhiman.png";
 import vi from "../../assets/speakers/vi_.jpg";
-import prem from "../../assets/speakers/prem.png"; // New import
-import laltu from "../../assets/speakers/laltu.jpg"; // New import
+import prem from "../../assets/speakers/prem.png";
+import laltu from "../../assets/speakers/laltu.jpg";
+import sahibaImg from "../../assets/speakers/sahiba.jpeg";
+import paulImg from "../../assets/speakers/paul.png";
+import kableeshImg from "../../assets/speakers/r_kableesh.png";
+import subhabrataImg from "../../assets/speakers/subhabrata.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -74,6 +78,7 @@ const Home = () => {
   };
 
   const speakers = [
+    { name: "Prof. Goutam Kumar Paul", university: "ISI Kolkata", image: paulImg },
     { name: "Dr. M. Prem Laxman Das", university: "SETS India", image: prem },
     { name: "Dr Angshuman Karmakar", university: "IIT Kanpur", image: angshumanImg },
     { name: "Dr Avik Chakraborti", university: "TCG Crest", image: avikImg },
@@ -83,6 +88,10 @@ const Home = () => {
     { name: "Dr Srinivas Vivek", university: "IIIT Bangalore", image: vi },
     { name: "Dr Mostafizar Rahman", university: "NTU Singapore", image: mostafizarImg },
     { name: "Dr Shibam Ghosh", university: "INRIA", image: shimanImg },
+    { name: "Dr Dhiman Saha", university: "IIT Bhilai", image: dhimanImg },
+    { name: "Dr Sahiba Suryawanshi", university: "IIT Bhilai", image: sahibaImg },
+    { name: "Dr R Kabaleeshwaran", university: "IIITDM Kurnool", image: kableeshImg },
+    { name: "Dr Subhabrata Samajder", university: "TCG Crest", image: subhabrataImg },
   ];
 
   const focusAreas = [
@@ -235,7 +244,7 @@ const Home = () => {
             data-aos="fade-up"
             className="text-xl sm:text-3xl font-bold text-center text-[#2e2a30] mb-8"
           >
-            Distinguished Speakers
+            Distinguished Speakers & Experts
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">

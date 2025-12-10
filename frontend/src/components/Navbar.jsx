@@ -13,6 +13,7 @@ export default function Navbar() {
     { label: 'Venue', path: '/travel/venue' },
     { label: 'Sponsors', path: '/sponsors' },
     { label: 'Group Information', path: '/group-information' },
+    { label: 'Presentation', path: '/presentation' },
     { label: 'Photostream', path: '/photostream' },
   ];
 

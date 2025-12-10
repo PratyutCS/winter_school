@@ -18,6 +18,7 @@ import Photostream from './pages/Photostream';
 import ErrorPage from './pages/ErrorPage';
 import BackgroundCarousel from './components/BackgroundCarousel';
 import FloatingButton from './components/FloatingButton';
+import Presentation from './pages/Presentation';
 
 export default function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -97,6 +98,7 @@ export default function App() {
             <Route path="/group-information/:groupId" element={<GroupDetail />} />
             <Route path="/organising-committee" element={<OrganisingCommittee />} />
             <Route path="/photostream" element={<Photostream />} />
+            <Route path="/presentation" element={<Presentation />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>

@@ -21,11 +21,11 @@ const presenters = [
         title: "TBD",
     },
     {
-        name: "Prathamesh Ram",
+        name: "Bibhas Chandra Das",
         title: "TBD",
     },
     {
-        name: "Bibhas Chandra Das",
+        name: "Prathamesh Ram",
         title: "TBD",
     },
     {

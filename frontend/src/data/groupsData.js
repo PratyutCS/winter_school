@@ -87,7 +87,7 @@ export const groups = [
             { name: "Dr Laltu Sardar", initials: "LS", image: laltuImg },
             { name: "Dr Subhabrata Samajder", initials: "SS", image: subhabrataImg }
         ],
-        members: ["Bibhas Chandra Das", "Palak Kumari", "Pratyut", "Vipin Kumar", "Fedal Castro", "Shreya Dey"]
+        members: ["Bibhas Chandra Das", "Palak Kumari", "Vipin Kumar", "Fedal Castro", "Shreya Dey"]
     },
     {
         id: 7,

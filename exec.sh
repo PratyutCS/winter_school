@@ -11,7 +11,15 @@ echo "Pushing to remote..."
 git push
 
 echo "Running local script..."
-./script.sh
+
+cd frontend
+npm i
+printf "\nSatisfied preview, building now\n"
+npm run build
+cd dist
+zip -r website.zip ./
+printf "\nscp frontend/dist/website.zip cws@events.iitbhilai.ac.in:~/\n\n"
+
 
 echo "Zipping frontend/dist (if not already zipped)..."
 # Uncomment the next line if you need to zip it here:

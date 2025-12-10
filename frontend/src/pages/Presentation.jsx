@@ -5,16 +5,16 @@ import GlowingBox from '../components/GlowingBox';
 
 const presenters = [
     {
-        name: "Sajani Kundu",
-        title: "EWEMrl: A White-Box Secure Cipher with Longevity",
-    },
-    {
         name: "Hrithik Nandi",
         title: "Sequential Indifferentiability of STH and EDM",
     },
     {
         name: "Amlan Sinha",
         title: "Committing Security of BBB Secure MACs",
+    },
+    {
+        name: "Sajani Kundu",
+        title: "EWEMrl: A White-Box Secure Cipher with Longevity",
     },
     {
         name: "Anup Kumar Kundu",

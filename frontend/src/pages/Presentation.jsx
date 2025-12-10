@@ -21,7 +21,7 @@ const presenters = [
         title: "TBD",
     },
     {
-        name: "R Prathamesh Ram",
+        name: "Prathamesh Ram",
         title: "TBD",
     },
     {

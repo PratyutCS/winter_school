@@ -24,10 +24,10 @@ export const schedule = [
     ],
     // Dec 11
     [
-        { time: '09:30 - 10:30', event: 'Mitigating Randao Manipulation: Can a VDF Be the Missing Link?', speaker: 'Dr Laltu Sardar', chair: 'Dr Subhabrata Samajder', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'TBA', speaker: 'Dr Mostafizar Rahman', chair: 'Dr Subhabrata Samajder', type: 'talk' },
+        { time: '09:30 - 10:30', event: 'Mitigating Randao Manipulation: Is VDF the Missing Link?', speaker: 'Dr Laltu Sardar', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'TBA', speaker: 'Dr Mostafizar Rahman', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Morning Tea', speaker: '', chair: '', type: 'snacks' },
-        { time: '12:00 - 13:30', event: 'Student Presentations', speaker: '', chair: '', type: 'misc' },
+        { time: '12:00 - 13:30', event: 'Student Presentations', speaker: 'Selected Students', chair: 'Dr R Kabaleeshwaran', type: 'misc' },
         { time: '13:30 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
         { time: '14:30 - 15:45', event: 'Group Discussion', speaker: '', chair: '', type: 'groupd' },
         { time: '15:45 - 16:00', event: 'Coffee Break', speaker: '', chair: '', type: 'snacks' },
@@ -37,10 +37,10 @@ export const schedule = [
     ],
     // Dec 12
     [
-        { time: '09:30 - 10:30', event: 'TBA', speaker: 'Dr Sabyasachi Karati', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
-        { time: '10:30 - 11:30', event: 'Attack on a PUF-based Secure Binary Neural Network', speaker: 'Dr Srinivas Vivek', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
+        { time: '09:30 - 10:30', event: 'TBA', speaker: 'Dr Sabyasachi Karati', chair: 'Dr Subhabrata Samajder', type: 'talk' },
+        { time: '10:30 - 11:30', event: 'Attack on a PUF-based Secure Binary Neural Network', speaker: 'Dr Srinivas Vivek', chair: 'Dr Subhabrata Samajder', type: 'talk' },
         { time: '11:30 - 12:00', event: 'Morning Tea', speaker: '', chair: '', type: 'snacks' },
-        { time: '12:00 - 13:00', event: 'Security in the White-box Setting', speaker: 'Dr Avik Chakraborti', chair: 'Dr R Kabaleeshwaran', type: 'talk' },
+        { time: '12:00 - 13:00', event: 'Security in the White-box Setting', speaker: 'Dr Avik Chakraborti', chair: 'Dr Subhabrata Samajder', type: 'talk' },
         { time: '13:00 - 14:30', event: 'Lunch', speaker: '', chair: '', type: 'lunch' },
         { time: '14:30 - 15:45', event: 'Group Discussion', speaker: '', chair: '', type: 'groupd' },
         { time: '15:45 - 16:00', event: 'Coffee Break', speaker: '', chair: '', type: 'snacks' },

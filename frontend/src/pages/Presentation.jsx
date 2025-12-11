@@ -13,24 +13,24 @@ const presenters = [
         title: "Committing Security of BBB Secure MACs",
     },
     {
+	name: "Akshay Ankush Yadav",
+	title: "Permutation Polynomials over Finite Fields",
+    },
+    {
         name: "Sajani Kundu",
         title: "EWEMrl: A White-Box Secure Cipher with Longevity",
     },
     {
-        name: "Anup Kumar Kundu",
-        title: "TBD",
+        name: "Shreya Dey",
+        title: "Beyond CLRW1^4: A Two-Key Cascading LRW1 Design",
     },
     {
         name: "Bibhas Chandra Das",
-        title: "TBD",
+        title: "Conjunctive Dynamic SSE Schemes under Scrutiny: Exposing Privacy Issues in SDSSE-CQ-S and VCDSSE",
     },
     {
-        name: "Prathamesh Ram",
+        name: "Anup Kumar Kundu",
         title: "TBD",
-    },
-    {
-        name: "Shreya Dey",
-        title: "Beyond CLRW1^4: A Two-Key Cascading LRW1 Design",
     }
 ];
 

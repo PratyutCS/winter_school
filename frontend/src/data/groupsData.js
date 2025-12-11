@@ -77,7 +77,7 @@ export const groups = [
             { name: "Dr R Kabaleeshwaran", initials: "RK", image: kableeshImg },
             { name: "Dr Sabyasachi Karati", initials: "SK", image: sabyasachiImg }
         ],
-        members: ["Akshay Dhan", "Gagan Soni", "Divya Nagabhai Varu", "Nikita Dey", "Divyam Katiyar", "Venkatesh Kumar", "Sajjan Kumar"]
+        members: ["Akshay Dhan", "Gagan Soni", "Divya Nagabhai Varu", "Nikita Dey", "Divyam Katiyar", "Santosh Kumar Singh", "Sajjan Kumar"]
     },
     {
         id: 6,
@@ -97,7 +97,7 @@ export const groups = [
             { name: "Dr Avik Chakraborti", initials: "AC", image: avikImg },
             { name: "Dr Srinivas Vivek", initials: "SV", image: vivekImg }
         ],
-        members: ["Dr Ayantika Laha", "Jitendra Kulaste", "Sandip Pal", "Sajani Kundu", "Md Alamgir Alam", "Santosh Kumar Singh"]
+        members: ["Dr Ayantika Laha", "Jitendra Kulaste", "Sandip Pal", "Sajani Kundu", "Md Alamgir Alam", "Venkatesh Kumar"]
     },
 ];
 

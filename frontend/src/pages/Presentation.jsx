@@ -26,11 +26,15 @@ const presenters = [
     },
     {
         name: "Bibhas Chandra Das",
-        title: "Conjunctive Dynamic SSE Schemes under Scrutiny: Exposing Privacy Issues in SDSSE-CQ-S and VCDSSE",
+        title: "Conjunctive Dynamic SSE Schemes under Scrutiny",
     },
     {
-        name: "Anup Kumar Kundu",
-        title: "TBD",
+	name: "Anup Kumar Kundu",
+        title: "Division Property Based Fault Attacks on PRESENT and GIFT",
+    }
+    {
+	name: "Jamunarani D",
+	title: "Optimized Architecture Of Light Weight Block Cipher For Secured Data Transmission"
     }
 ];
 
